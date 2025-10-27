@@ -58,7 +58,7 @@ const Header: React.FC = () => {
             
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-6">
-              {navLinks.map((item, index) => (
+              {mounted && navLinks.map((item, index) => (
                 <Link
                   key={index}
                   href={item.href}
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
             </div>
             
             <div className={`hidden md:block`}>
-              <Link href='/schedule' className={`text-lg font-bold px-8 py-3 rounded-full transition-all duration-300 shadow-xl hover:scale-105 transform ${isHomepage
+              <Link href='/contactus' className={`text-lg font-bold px-8 py-3 rounded-full transition-all duration-300 shadow-xl hover:scale-105 transform ${isHomepage
                 ? sticky
                   ? 'bg-primary text-white hover:bg-primary/90 hover:shadow-2xl'
                   : 'bg-primary text-white hover:bg-primary/90 hover:shadow-2xl'

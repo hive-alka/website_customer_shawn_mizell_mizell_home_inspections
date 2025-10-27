@@ -33,7 +33,27 @@ export default function ContactUs() {
           </p>
         </div>
       </div>
-      {/* form */}
+
+      {/* Spectora Scheduling */}
+      <div className='mb-16'>
+        <div className='text-center mb-8'>
+          <h3 className='text-3xl font-semibold text-black dark:text-white mb-2'>
+            Schedule Online
+          </h3>
+          <p className='text-black/60 dark:text-white/60'>
+            Choose your preferred date and time for your home inspection
+          </p>
+        </div>
+        <div className='border border-black/10 dark:border-white/10 rounded-2xl overflow-hidden shadow-xl dark:shadow-white/10'>
+          <iframe
+            src='https://app.spectora.com/home-inspectors/my-inspection-company-eef1ca1ab8/schedule?iframe=1'
+            style={{border: 0, height: '1100px', width: '100%'}}
+            title='Schedule Home Inspection'
+          />
+        </div>
+      </div>
+
+      {/* Contact form */}
       <div className='border border-black/10 dark:border-white/10 rounded-2xl p-4 shadow-xl dark:shadow-white/10'>
         <div className='flex flex-col lg:flex-row lg:items-center gap-12'>
           <div className='relative w-fit'>
