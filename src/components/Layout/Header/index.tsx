@@ -11,6 +11,7 @@ import Image from 'next/image'
 const Header: React.FC = () => {
   const [sticky, setSticky] = useState(false)
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
   const pathname = usePathname()
 
@@ -27,6 +28,7 @@ const Header: React.FC = () => {
   }, [])
 
   useEffect(() => {
+    setMounted(true)
     window.addEventListener('scroll', handleScroll)
     document.addEventListener('mousedown', handleClickOutside)
 
@@ -75,7 +77,7 @@ const Header: React.FC = () => {
           </div>
           <div className='flex items-center gap-2 sm:gap-6'>
             <div className={`hidden md:block`}>
-              <Link href='tel:+1-212-456-789' className={`text-lg font-medium flex items-center gap-3 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-primary/10 ${isHomepage
+              <Link href='tel:352-652-0259' className={`text-lg font-medium flex items-center gap-3 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-primary/10 ${isHomepage
                 ? sticky
                   ? 'text-dark dark:text-white hover:text-primary'
                   : 'text-white hover:text-primary'
@@ -83,7 +85,7 @@ const Header: React.FC = () => {
                 }`}
               >
                 <Icon icon={'ph:phone-bold'} width={28} height={28} />
-                <span><span className="font-bold">Call</span> +1-212-456-789</span>
+                <span><span className="font-bold">Call</span> 352-652-0259</span>
               </Link>
             </div>
             
@@ -99,28 +101,30 @@ const Header: React.FC = () => {
               </Link>
             </div>
             
-            <button
-              className='hover:cursor-pointer'
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            >
-              <Icon
-                icon={'solar:sun-bold'}
-                width={32}
-                height={32}
-                className={`dark:hidden block ${isHomepage
-                  ? sticky
-                    ? 'text-dark'
-                    : 'text-white'
-                  : 'text-dark'
-                  }`}
-              />
-              <Icon
-                icon={'solar:moon-bold'}
-                width={32}
-                height={32}
-                className='dark:block hidden text-white'
-              />
-            </button>
+            {mounted && (
+              <button
+                className='hover:cursor-pointer'
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              >
+                <Icon
+                  icon={'solar:sun-bold'}
+                  width={32}
+                  height={32}
+                  className={`dark:hidden block ${isHomepage
+                    ? sticky
+                      ? 'text-dark'
+                      : 'text-white'
+                    : 'text-dark'
+                    }`}
+                />
+                <Icon
+                  icon={'solar:moon-bold'}
+                  width={32}
+                  height={32}
+                  className='dark:block hidden text-white'
+                />
+              </button>
+            )}
             
             <div className="block lg:hidden">
               <button
@@ -196,11 +200,11 @@ const Header: React.FC = () => {
             <p className='text-base sm:text-xm font-normal text-white/40'>
               Contact
             </p>
-            <Link href="#" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
-              hello@homely.com
+            <Link href="mailto:shawn@mizellhomeinspections.com" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
+              shawn@mizellhomeinspections.com
             </Link>
-            <Link href="#" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
-              +1-212-456-7890{' '}
+            <Link href="tel:352-652-0259" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
+              352-652-0259{' '}
             </Link>
           </div>
         </div>

@@ -4,15 +4,15 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title:
-        "Blog Grids | Homely ",
+        "Home Inspection Tips & Insights | Mizell Home Inspections",
 };
 
 const Blog = () => {
     return (
         <>
             <HeroSub
-                title="Real estate insights."
-                description="Stay ahead in the property market with expert advice and updates."
+                title="Home Inspection Insights"
+                description="Expert advice, tips, and updates from Inspector Shawn to help you make informed property decisions."
                 badge="Blog"
             />
             <BlogList />

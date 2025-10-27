@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Metadata } from "next";
 export const metadata: Metadata = {
-    title: "Contact Us | Homely",
+    title: "Contact Us | Mizell Home Inspections",
 };
 
 export default function ContactUs() {
@@ -25,11 +25,11 @@ export default function ContactUs() {
         </div>
         <div className='text-center'>
           <h3 className='text-4xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3 leading-10 sm:leading-14'>
-            Have questions? ready to help!
+            Schedule Your Home Inspection Today
           </h3>
           <p className='text-xm font-normal tracking-tight text-black/50 dark:text-white/50 leading-6'>
-            Looking for your dream home or ready to sell? Our expert team offers
-            personalized guidance and market expertise tailored to you.
+            Ready to protect your investment? Contact Certified Master Inspector® Shawn Mizell
+            for thorough, professional home inspections. Serving Gainesville down to St Pete, West Coast over to Orlando.
           </p>
         </div>
       </div>
@@ -47,56 +47,55 @@ export default function ContactUs() {
             />
             <div className='absolute top-6 left-6 lg:top-12 lg:left-12 flex flex-col gap-2'>
               <h5 className='text-xl xs:text-2xl mobile:text-3xl font-medium tracking-tight text-white'>
-                Contact information
+                Contact Information
               </h5>
               <p className='text-sm xs:text-base mobile:text-xm font-normal text-white/80'>
-                Ready to find your dream home or sell your property? We’re here
-                to help!
+                Same-day scheduling available. Call or message us to book your inspection!
               </p>
             </div>
             <div className='absolute bottom-6 left-6 lg:bottom-12 lg:left-12 flex flex-col gap-4 text-white'>
-              <Link href={'/'} className='w-fit'>
+              <a href='tel:352-652-0259' className='w-fit'>
                 <div className='flex items-center gap-4 group w-fit'>
                   <Icon icon={'ph:phone'} width={32} height={32} />
                   <p className='text-sm xs:text-base mobile:text-xm font-normal group-hover:text-primary'>
-                    +1 0239 0310 1122
+                    352-652-0259
                   </p>
                 </div>
-              </Link>
-              <Link href={'/'} className='w-fit'>
+              </a>
+              <a href='mailto:shawn@mizellhomeinspections.com' className='w-fit'>
                 <div className='flex items-center gap-4 group w-fit'>
                   <Icon icon={'ph:envelope-simple'} width={32} height={32} />
                   <p className='text-sm xs:text-base mobile:text-xm font-normal group-hover:text-primary'>
-                    support@gleamer.com
+                    shawn@mizellhomeinspections.com
                   </p>
                 </div>
-              </Link>
+              </a>
               <div className='flex items-center gap-4'>
                 <Icon icon={'ph:map-pin'} width={32} height={32} />
                 <p className='text-sm xs:text-base mobile:text-xm font-normal'>
-                  Blane Street, Manchester
+                  687 Harvard St.<br />Brooksville, FL 34601
                 </p>
               </div>
             </div>
           </div>
           <div className='flex-1/2'>
-            <form>
+            <form action={`mailto:shawn@mizellhomeinspections.com`} method="post" encType="text/plain">
               <div className='flex flex-col gap-8'>
                 <div className='flex flex-col lg:flex-row gap-6'>
                   <input
                     type='text'
-                    name='username'
-                    id='username'
-                    autoComplete='username'
+                    name='name'
+                    id='name'
+                    autoComplete='name'
                     placeholder='Name*'
                     required
                     className='px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-full outline-primary focus:outline w-full'
                   />
                   <input
-                    type='number'
-                    name='mobile'
-                    id='mobile'
-                    autoComplete='mobile'
+                    type='tel'
+                    name='phone'
+                    id='phone'
+                    autoComplete='tel'
                     placeholder='Phone number*'
                     required
                     className='px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-full outline-primary focus:outline w-full'
@@ -119,7 +118,7 @@ export default function ContactUs() {
                   placeholder='Write here your message'
                   required
                   className='px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-2xl outline-primary focus:outline'></textarea>
-                <button className='px-8 py-4 rounded-full bg-primary text-white text-base font-semibold w-full mobile:w-fit hover:cursor-pointer hover:bg-dark duration-300'>
+                <button type="submit" className='px-8 py-4 rounded-full bg-primary text-white text-base font-semibold w-full mobile:w-fit hover:cursor-pointer hover:bg-dark duration-300'>
                   Send message
                 </button>
               </div>

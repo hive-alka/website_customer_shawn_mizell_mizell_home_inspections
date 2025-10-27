@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const GetInTouch: React.FC = () => {
+const CTA: React.FC = () => {
     return (
         <section>
             <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
@@ -10,7 +10,7 @@ const GetInTouch: React.FC = () => {
                         autoPlay
                         loop
                         muted
-                        aria-label="Video background showing luxurious real estate"
+                        aria-label="Video background showing home inspection"
                     >
                         <source src="https://videos.pexels.com/video-files/7233782/7233782-hd_1920_1080_25fps.mp4" type="video/mp4" />
                     </video>
@@ -48,4 +48,4 @@ const GetInTouch: React.FC = () => {
     );
 };
 
-export default GetInTouch;
+export default CTA;

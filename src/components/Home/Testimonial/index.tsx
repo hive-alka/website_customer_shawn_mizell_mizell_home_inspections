@@ -1,6 +1,5 @@
 "use client";
 import * as React from "react";
-import Image from "next/image";
 import { Icon } from "@iconify/react";
 import {
     Carousel,
@@ -8,12 +7,17 @@ import {
     CarouselItem,
     type CarouselApi,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import { testimonials } from "@/app/api/testimonial";
 
 const Testimonial = () => {
     const [api, setApi] = React.useState<CarouselApi | undefined>(undefined);
     const [current, setCurrent] = React.useState(0);
     const [count, setCount] = React.useState(0);
+
+    const plugin = React.useRef(
+        Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: false })
+    );
 
     React.useEffect(() => {
         if (!api) return;
@@ -33,79 +37,56 @@ const Testimonial = () => {
     };
 
     return (
-        <section className="bg-dark relative overflow-hidden" id="testimonial">
-            <div className="absolute right-0">
-                <Image
-                    src="/images/testimonial/Vector.png"
-                    alt="victor"
-                    width={700}
-                    height={1039}
-                    unoptimized={true}
-                />
-            </div>
-            <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
-                <div>
-                    <p className="text-white text-base font-semibold flex gap-2">
-                        <Icon icon="ph:house-simple-fill" className="text-2xl text-primary" />
-                        Testimonials
-                    </p>
-                    <h2 className="lg:text-52 text-40 font-medium text-white">
+        <section className="bg-dark relative overflow-hidden py-20" id="testimonial">
+            <div className="container max-w-7xl mx-auto px-5 2xl:px-0">
+                <div className="text-center mb-12">
+                    <div className="flex gap-2 items-center justify-center mb-3">
+                        <Icon icon="mdi:star-circle" className="text-2xl text-primary" />
+                        <p className="text-white text-base font-semibold">
+                            Testimonials
+                        </p>
+                    </div>
+                    <h2 className="lg:text-52 text-40 font-medium text-white mb-4">
                         What our clients say
                     </h2>
                 </div>
                 <Carousel
                     setApi={setApi}
+                    plugins={[plugin.current]}
                     opts={{
                         loop: true,
+                        align: "start",
                     }}
+                    className="w-full"
                 >
-                    <CarouselContent>
+                    <CarouselContent className="-ml-4">
                         {testimonials.map((item, index) => (
-                            <CarouselItem key={index} className="mt-9">
-                                <div className="lg:flex items-center gap-11">
-                                    <div className="flex items-start gap-11 lg:pr-20">
-                                        <div>
-                                            <Icon icon="ph:house-simple" width={32} height={32} className="text-primary" />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-white lg:text-3xl text-2xl">{item.review}</h4>
-                                            <div className="flex items-center mt-8 gap-6">
-                                                <Image
-                                                    src={item.image}
-                                                    alt={item.name}
-                                                    width={80}
-                                                    height={80}
-                                                    className="rounded-full lg:hidden block"
-                                                    unoptimized={true}
-                                                />
-                                                <div>
-                                                    <h6 className="text-white text-xm font-medium">{item.name}</h6>
-                                                    <p className="text-white/40">{item.position}</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                            <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 h-full flex flex-col border border-white/10">
+                                    <Icon icon="mdi:format-quote-open" width={40} height={40} className="text-primary mb-4" />
+                                    <p className="text-white text-base leading-relaxed mb-6 flex-grow">
+                                        {item.review}
+                                    </p>
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <Icon icon="mdi:star" className="text-primary text-lg" />
+                                        <Icon icon="mdi:star" className="text-primary text-lg" />
+                                        <Icon icon="mdi:star" className="text-primary text-lg" />
+                                        <Icon icon="mdi:star" className="text-primary text-lg" />
+                                        <Icon icon="mdi:star" className="text-primary text-lg" />
                                     </div>
-                                    <div className="w-full h-full rounded-2xl overflow-hidden">
-                                        <Image
-                                            src={item.image}
-                                            alt={item.name}
-                                            width={440}
-                                            height={440}
-                                            className="lg:block hidden"
-                                            unoptimized={true}
-                                        />
-                                    </div>
+                                    <h6 className="text-white text-lg font-semibold">{item.name}</h6>
+                                    <p className="text-white/60 text-sm">{item.position}</p>
                                 </div>
                             </CarouselItem>
                         ))}
                     </CarouselContent>
                 </Carousel>
-                <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 flex gap-2.5 p-2.5 bg-white/20 rounded-full">
+                <div className="flex justify-center mt-8 gap-2.5 p-2.5 bg-white/10 rounded-full w-fit mx-auto">
                     {Array.from({ length: count }).map((_, index) => (
                         <button
                             key={index}
                             onClick={() => handleDotClick(index)}
-                            className={`w-2.5 h-2.5 rounded-full ${current === index + 1 ? "bg-white" : "bg-white/50"
+                            className={`w-2.5 h-2.5 rounded-full transition-colors ${current === index + 1 ? "bg-white" : "bg-white/40"
                                 }`}
                             aria-label={`Go to slide ${index + 1}`}
                         />
