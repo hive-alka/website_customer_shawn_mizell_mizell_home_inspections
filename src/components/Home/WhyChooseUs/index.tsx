@@ -80,6 +80,54 @@ const WhyChooseUs: React.FC = () => {
             </div>
           ))}
         </div>
+
+        {/* Why Hire Mizell Section */}
+        <div className='mt-24'>
+          <div className='mb-12 text-center'>
+            <h2 className='text-40 lg:text-52 font-medium text-black dark:text-white mb-4'>
+              Why Hire Mizell?
+            </h2>
+          </div>
+
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
+            {/* We Notice the Little Things */}
+            <div className='bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20 p-8 rounded-2xl border border-primary/20'>
+              <div className='flex items-start gap-4 mb-4'>
+                <div className='bg-primary/20 p-3 rounded-full'>
+                  <Icon icon='mdi:magnify-plus-outline' width={32} height={32} className='text-primary' />
+                </div>
+                <h3 className='text-2xl font-semibold text-black dark:text-white pt-2'>
+                  We Notice the Little Things
+                </h3>
+              </div>
+              <div className='space-y-4 text-black/70 dark:text-white/70'>
+                <p>
+                  Our highly-trained inspectors will comb over all accessible areas. We will crawl into the smallest spaces to check crawl spaces and the deepest corners of your attic.
+                </p>
+                <p>
+                  We use state-of-the-art tools such as infrared cameras, moisture meters, drones, and many other advanced inspection tools.
+                </p>
+              </div>
+            </div>
+
+            {/* Communication */}
+            <div className='bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20 p-8 rounded-2xl border border-primary/20'>
+              <div className='flex items-start gap-4 mb-4'>
+                <div className='bg-primary/20 p-3 rounded-full'>
+                  <Icon icon='mdi:message-text-outline' width={32} height={32} className='text-primary' />
+                </div>
+                <h3 className='text-2xl font-semibold text-black dark:text-white pt-2'>
+                  Communication
+                </h3>
+              </div>
+              <div className='space-y-4 text-black/70 dark:text-white/70'>
+                <p>
+                  We believe in being there for our clients for more than just the inspection day. Strong and honest communication is part of our business model.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )

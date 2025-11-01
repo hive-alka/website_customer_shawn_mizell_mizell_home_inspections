@@ -53,7 +53,7 @@ export default function ContactUs() {
         </div>
       </div>
 
-      {/* Contact form */}
+      {/* Contact Information Only - Intake Form Removed */}
       <div className='border border-black/10 dark:border-white/10 rounded-2xl p-4 shadow-xl dark:shadow-white/10'>
         <div className='flex flex-col lg:flex-row lg:items-center gap-12'>
           <div className='relative w-fit'>
@@ -97,52 +97,6 @@ export default function ContactUs() {
                 </p>
               </div>
             </div>
-          </div>
-          <div className='flex-1/2'>
-            <form action={`mailto:shawn@mizellhomeinspections.com`} method="post" encType="text/plain">
-              <div className='flex flex-col gap-8'>
-                <div className='flex flex-col lg:flex-row gap-6'>
-                  <input
-                    type='text'
-                    name='name'
-                    id='name'
-                    autoComplete='name'
-                    placeholder='Name*'
-                    required
-                    className='px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-full outline-primary focus:outline w-full'
-                  />
-                  <input
-                    type='tel'
-                    name='phone'
-                    id='phone'
-                    autoComplete='tel'
-                    placeholder='Phone number*'
-                    required
-                    className='px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-full outline-primary focus:outline w-full'
-                  />
-                </div>
-                <input
-                  type='email'
-                  name='email'
-                  id='email'
-                  autoComplete='email'
-                  placeholder='Email address*'
-                  required
-                  className='px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-full outline-primary focus:outline'
-                />
-                <textarea
-                  rows={8}
-                  cols={50}
-                  name='message'
-                  id='message'
-                  placeholder='Write here your message'
-                  required
-                  className='px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-2xl outline-primary focus:outline'></textarea>
-                <button type="submit" className='px-8 py-4 rounded-full bg-primary text-white text-base font-semibold w-full mobile:w-fit hover:cursor-pointer hover:bg-dark duration-300'>
-                  Send message
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       </div>

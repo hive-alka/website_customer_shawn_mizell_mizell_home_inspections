@@ -81,9 +81,14 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex justify-between md:flex-nowrap flex-wrap items-center py-6 gap-6">
-          <p className="text-white/40 text-sm ">
-            ©2025 Mizell Home Inspections LLC - All Rights Reserved
-          </p>
+          <div className="flex flex-col gap-2">
+            <p className="text-white/40 text-sm ">
+              ©2025 Mizell Home Inspections LLC - All Rights Reserved
+            </p>
+            <p className="text-white/40 text-sm">
+              Website Powered By <Link href="https://www.hiveinspect.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-primary duration-300">Hive - AI Copilot for Home Inspectors</Link>
+            </p>
+          </div>
           <div className="flex gap-8 items-center">
             <Link href="#" className="text-white/40 hover:text-primary text-sm">
               Terms of service

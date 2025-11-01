@@ -11,6 +11,8 @@ const Hero: React.FC = () => {
             <h1 className='text-inherit text-5xl sm:text-7xl lg:text-8xl font-semibold -tracking-wider md:max-w-45p mt-4 mb-4'>
               Your Home's Safety First
             </h1>
+            <p className='text-xl font-bold text-primary mb-2'>We INSPECT what you EXPECT!</p>
+            <p className='text-lg text-white/90 dark:text-dark/90 mb-6'>We are a small, family-owned business.</p>
             <p className='text-white/90 dark:text-dark/90 text-lg font-medium mb-6'>
               5000+ Inspections • Commercial and Residential • Same Day Reports • Fully Licensed and Insured
             </p>
