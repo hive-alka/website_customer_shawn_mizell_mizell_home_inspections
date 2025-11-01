@@ -49,20 +49,20 @@ const WhyChooseUs: React.FC = () => {
                 className='text-primary'
               />
             </span>
-            <p className='text-base font-semibold text-dark/75 dark:text-white/75'>
+            <p className='text-base font-semibold text-dark/75'>
               Why Choose Us
             </p>
           </div>
-          <h2 className='text-[40px] leading-[1.2] font-semibold text-black dark:text-white text-center mb-3'>
+          <h2 className='text-[40px] leading-[1.2] font-semibold text-black text-center mb-3'>
             Your Trusted Home Inspection Partner
           </h2>
-          <p className='text-[17px] leading-[1.5] text-black/60 dark:text-white/60 text-center max-w-2xl mx-auto'>
+          <p className='text-[17px] leading-[1.5] text-black/60 text-center max-w-2xl mx-auto'>
             Professional inspections backed by experience, integrity, and commitment to excellence.
           </p>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10'>
           {reasons.map((item, index) => (
-            <div key={index} className='bg-white dark:bg-dark-200 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow'>
+            <div key={index} className='bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow'>
               <div className='mb-4'>
                 <Icon
                   icon={item.icon}
@@ -71,10 +71,10 @@ const WhyChooseUs: React.FC = () => {
                   className='text-primary'
                 />
               </div>
-              <h3 className='text-[24px] leading-[1.3] font-semibold text-black dark:text-white mb-3'>
+              <h3 className='text-[24px] leading-[1.3] font-semibold text-black mb-3'>
                 {item.title}
               </h3>
-              <p className='text-[17px] leading-[1.5] text-black/60 dark:text-white/60'>
+              <p className='text-[17px] leading-[1.5] text-black/60'>
                 {item.description}
               </p>
             </div>

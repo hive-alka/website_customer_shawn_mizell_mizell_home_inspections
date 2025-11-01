@@ -4,7 +4,6 @@ import './globals.css'
 import Header from '@/components/Layout/Header'
 import Footer from '@/components/Layout/Footer'
 import FloatingButton from '@/components/shared/FloatingButton'
-import { ThemeProvider } from 'next-themes'
 import NextTopLoader from 'nextjs-toploader';
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
@@ -20,18 +19,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning>
-      <body className={`${font.className} bg-white dark:bg-black antialiased`}>
-        <NextTopLoader color="#07be8a" />
-        <ThemeProvider
-          attribute='class'
-          enableSystem={true}
-          defaultTheme='light'>
-          <Header />
-          {children}
-          <Footer />
-          <FloatingButton />
-        </ThemeProvider>
+    <html lang='en'>
+      <body className={`${font.className} bg-white antialiased`}>
+        <NextTopLoader color="#C41E3A" />
+        <Header />
+        {children}
+        <Footer />
+        <FloatingButton />
       </body>
     </html>
   )

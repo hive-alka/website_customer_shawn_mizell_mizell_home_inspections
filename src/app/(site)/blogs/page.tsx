@@ -1,5 +1,6 @@
 import BlogList from "@/components/Blog";
 import HeroSub from "@/components/shared/HeroSub";
+import CTA from "@/components/shared/CTA";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ const Blog = () => {
                 badge="Blog"
             />
             <BlogList />
+            <CTA />
         </>
     );
 };

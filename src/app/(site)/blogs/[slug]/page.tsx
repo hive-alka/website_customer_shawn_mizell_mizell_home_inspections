@@ -3,7 +3,8 @@ import markdownToHtml from "@/components/utils/markdownToHtml";
 import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
-import { Icon } from '@iconify/react'
+import { Icon } from '@iconify/react';
+import CTA from "@/components/shared/CTA";
 
 type Props = {
     params: { slug: string };
@@ -93,10 +94,10 @@ export default async function Post({ params }: any) {
                                 />
                                 <span>Go Back</span>
                             </Link>
-                            <h2 className="text-dark dark:text-white md:text-52 text-40 leading-[1.2] font-semibold pt-7">
+                            <h2 className="text-dark md:text-52 text-40 leading-[1.2] font-semibold pt-7">
                                 {post.title}
                             </h2>
-                            <h6 className="text-xm mt-5 text-dark dark:text-white">
+                            <h6 className="text-xm mt-5 text-dark">
                                 {post.detail}
                             </h6>
                         </div>
@@ -112,26 +113,21 @@ export default async function Post({ params }: any) {
                                     unoptimized={true}
                                 />
                                 <div>
-                                    <span className="text-xm text-dark dark:text-white">
+                                    <span className="text-xm text-dark">
                                         {post.author}
                                     </span>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-7">
-                                <div className="flex items-center gap-4">
-                                    <Icon
-                                        icon={'ph:clock'}
-                                        width={20}
-                                        height={20}
-                                        className=''
-                                    />
-                                    <span className="text-base text-dark font-medium dark:text-white">
-                                        {format(new Date(post.date), "MMM dd, yyyy")}
-                                    </span>
-                                </div>
-                                <div className="py-2.5 px-5 bg-dark/5 rounded-full dark:bg-white/15">
-                                    <p className="text-sm font-semibold text-dark dark:text-white">{post.tag}</p>
-                                </div>
+                            <div className="flex items-center gap-4">
+                                <Icon
+                                    icon={'ph:clock'}
+                                    width={20}
+                                    height={20}
+                                    className=''
+                                />
+                                <span className="text-base text-dark font-medium">
+                                    {format(new Date(post.date), "MMM dd, yyyy")}
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -156,6 +152,7 @@ export default async function Post({ params }: any) {
                     </div>
                 </div>
             </section>
+            <CTA />
         </>
     );
 }

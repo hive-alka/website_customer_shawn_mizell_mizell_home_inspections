@@ -31,7 +31,7 @@ const steps = [
 
 const HowItWorks: React.FC = () => {
   return (
-    <section className='bg-gray-50 dark:bg-dark-200'>
+    <section className='bg-gray-50'>
       <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
         <div className='mb-16 flex flex-col gap-3'>
           <div className='flex gap-2.5 items-center justify-center'>
@@ -41,14 +41,14 @@ const HowItWorks: React.FC = () => {
               height={20}
               className='text-primary'
             />
-            <p className='text-base font-semibold text-dark/75 dark:text-white/75'>
+            <p className='text-base font-semibold text-dark/75'>
               How It Works
             </p>
           </div>
-          <h2 className='text-[40px] leading-[1.2] font-semibold text-dark dark:text-white text-center mb-3'>
+          <h2 className='text-[40px] leading-[1.2] font-semibold text-dark text-center mb-3'>
             Simple, Straightforward Process
           </h2>
-          <p className='text-[17px] leading-[1.5] text-dark/60 dark:text-white/60 text-center max-w-2xl mx-auto'>
+          <p className='text-[17px] leading-[1.5] text-dark/60 text-center max-w-2xl mx-auto'>
             From scheduling to receiving your report, we make the home inspection process easy and stress-free.
           </p>
         </div>
@@ -63,7 +63,7 @@ const HowItWorks: React.FC = () => {
 
               <div className='relative z-10 flex flex-col items-center text-center'>
                 {/* Icon circle */}
-                <div className='bg-primary/10 dark:bg-primary/20 rounded-full p-6 mb-4 relative'>
+                <div className='bg-primary/10 rounded-full p-6 mb-4 relative'>
                   <Icon
                     icon={step.icon}
                     width={40}
@@ -76,10 +76,10 @@ const HowItWorks: React.FC = () => {
                   </div>
                 </div>
 
-                <h3 className='text-[20px] leading-[1.3] font-semibold text-dark dark:text-white mb-3'>
+                <h3 className='text-[20px] leading-[1.3] font-semibold text-dark mb-3'>
                   {step.title}
                 </h3>
-                <p className='text-[16px] leading-[1.5] text-dark/60 dark:text-white/60'>
+                <p className='text-[16px] leading-[1.5] text-dark/60'>
                   {step.description}
                 </p>
               </div>

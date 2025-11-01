@@ -28,14 +28,14 @@ const ErrorPage = () => {
               className='text-primary'
             />
           </span>
-          <p className='text-base font-semibold text-dark/75 dark:text-white/75'>
+          <p className='text-base font-semibold text-dark/75'>
             Error 404
           </p>
         </div>
-        <h2 className="text-dark text-52 relative font-bold dark:text-white " >
+        <h2 className="text-dark text-52 relative font-bold" >
           Lost? Let’s Help You Find Home.
         </h2>
-        <p className="text-lg text-dark/50 dark:text-white/50 font-normal w-full mx-auto">
+        <p className="text-lg text-dark/50 font-normal w-full mx-auto">
           Looks like you’ve hit a dead end — but don’t worry, we’ll help you get back on track
         </p>
       </section>

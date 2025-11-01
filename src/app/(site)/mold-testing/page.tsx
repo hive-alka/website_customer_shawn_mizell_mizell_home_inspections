@@ -59,19 +59,19 @@ const MoldTestingPage = () => {
                 </div>
 
                 {/* Quick Contact Card */}
-                <div className='bg-primary/10 dark:bg-primary/20 rounded-2xl p-6 border border-primary/20'>
-                  <h3 className='text-xl font-semibold text-dark dark:text-white mb-4'>
+                <div className='bg-primary/10 rounded-2xl p-6 border border-primary/20'>
+                  <h3 className='text-xl font-semibold text-dark mb-4'>
                     Schedule Your Mold Assessment
                   </h3>
-                  <p className='text-dark/70 dark:text-white/70 mb-6 text-sm'>
+                  <p className='text-dark/70 mb-6 text-sm'>
                     Concerned about mold in your home? Contact Inspector Shawn today for a comprehensive evaluation.
                   </p>
                   <div className='space-y-3 mb-6'>
-                    <a href='tel:352-652-0259' className='flex items-center gap-3 text-dark dark:text-white hover:text-primary transition-colors'>
+                    <a href='tel:352-652-0259' className='flex items-center gap-3 text-dark hover:text-primary transition-colors'>
                       <Icon icon='ph:phone-fill' width={20} height={20} className='text-primary' />
                       <span className='font-semibold'>352-652-0259</span>
                     </a>
-                    <a href='mailto:shawn@mizellhomeinspections.com' className='flex items-center gap-3 text-dark dark:text-white hover:text-primary transition-colors'>
+                    <a href='mailto:shawn@mizellhomeinspections.com' className='flex items-center gap-3 text-dark hover:text-primary transition-colors'>
                       <Icon icon='ph:envelope-simple-fill' width={20} height={20} className='text-primary' />
                       <span className='text-sm'>shawn@mizellhomeinspections.com</span>
                     </a>
@@ -93,12 +93,12 @@ const MoldTestingPage = () => {
                   <div className='p-3 bg-primary/10 rounded-full'>
                     <Icon icon="ph:drop-fill" width={32} height={32} className='text-primary' />
                   </div>
-                  <h2 className='text-3xl lg:text-4xl font-semibold text-dark dark:text-white'>
+                  <h2 className='text-3xl lg:text-4xl font-semibold text-dark'>
                     Professional Mold Testing
                   </h2>
                 </div>
 
-                <div className='space-y-4 text-lg text-dark/80 dark:text-white/80 leading-relaxed'>
+                <div className='space-y-4 text-lg text-dark/80 leading-relaxed'>
                   <p>
                     Do you have mold problems or are not sure but think you might? Make sure to call Mizell Home Inspections LLC today! Our inspector, Shawn, will provide a complete home health evaluation in Hillsborough County, up to Marion County and the surrounding areas.
                   </p>
@@ -113,10 +113,10 @@ const MoldTestingPage = () => {
 
               {/* Testing Types Section */}
               <div className='mb-10'>
-                <h3 className='text-2xl font-semibold text-dark dark:text-white mb-6'>
+                <h3 className='text-2xl font-semibold text-dark mb-6'>
                   Mold Testing Process
                 </h3>
-                <p className='text-dark/70 dark:text-white/70 mb-6'>
+                <p className='text-dark/70 mb-6'>
                   During the mold testing process, we will gather one or all 3 of the following types of samples:
                 </p>
 
@@ -124,7 +124,7 @@ const MoldTestingPage = () => {
                   {testingTypes.map((type, index) => (
                     <div
                       key={index}
-                      className='bg-white dark:bg-white/5 rounded-2xl p-6 border border-dark/10 dark:border-white/10 shadow-lg hover:shadow-xl transition-shadow'
+                      className='bg-white rounded-2xl p-6 border border-dark/10 shadow-lg hover:shadow-xl transition-shadow'
                     >
                       <div className='flex items-start gap-4'>
                         <div className='flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center'>
@@ -135,11 +135,11 @@ const MoldTestingPage = () => {
                             <span className='text-xs font-bold text-primary bg-primary/10 px-3 py-1 rounded-full'>
                               {type.category}
                             </span>
-                            <h4 className='text-xl font-semibold text-dark dark:text-white'>
+                            <h4 className='text-xl font-semibold text-dark'>
                               {type.title}
                             </h4>
                           </div>
-                          <p className='text-dark/70 dark:text-white/70 leading-relaxed'>
+                          <p className='text-dark/70 leading-relaxed'>
                             {type.description}
                           </p>
                         </div>
@@ -150,7 +150,7 @@ const MoldTestingPage = () => {
               </div>
 
               {/* Service Area */}
-              <div className='bg-dark dark:bg-white/5 rounded-2xl p-6 border border-dark/10 dark:border-white/10'>
+              <div className='bg-dark rounded-2xl p-6 border border-dark/10'>
                 <div className='flex items-start gap-4'>
                   <Icon icon='ph:map-trifold' width={32} height={32} className='text-primary flex-shrink-0' />
                   <div>

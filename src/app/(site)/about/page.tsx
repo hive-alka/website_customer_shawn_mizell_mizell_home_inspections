@@ -52,7 +52,7 @@ const AboutPage = () => {
 
             {/* Content Column */}
             <div className='lg:col-span-7 col-span-12'>
-              <div className='space-y-6 text-lg text-black/80 dark:text-white/80 leading-relaxed'>
+              <div className='space-y-6 text-lg text-black/80 leading-relaxed'>
                 <p>
                   <strong className='text-primary'>Inspector Shawn</strong> (Shawn Mizell) is a Certified Master Inspector® and licensed Commercial Property Inspector with years of experience helping Florida homeowners and investors make informed decisions. As the owner of Mizell Home Inspections, Inspector Shawn is known for his meticulous attention to detail, deep building science knowledge, and commitment to integrity on every inspection.
                 </p>
@@ -62,7 +62,7 @@ const AboutPage = () => {
                 <p>
                   Beyond the job site, Shawn is also a well-known voice in the inspection community, sharing educational and entertaining content as <strong>&quot;Inspector Shawn&quot;</strong> across YouTube, TikTok, Facebook, and Instagram, where his combined audience of tens of thousands follows his insights, humor, and real-world inspection tips.
                 </p>
-                <p className='text-xl font-semibold text-black dark:text-white pt-4'>
+                <p className='text-xl font-semibold text-black pt-4'>
                   When you hire Mizell Home Inspections, you&apos;re not just getting an inspection—you&apos;re getting the experience, expertise, and enthusiasm of one of Florida&apos;s most trusted inspectors.
                 </p>
               </div>

@@ -79,7 +79,7 @@ const GalleryPage = () => {
                 className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
                   selectedCategory === category
                     ? 'bg-primary text-white shadow-lg shadow-primary/30'
-                    : 'bg-dark/5 dark:bg-white/5 text-dark dark:text-white hover:bg-dark/10 dark:hover:bg-white/10'
+                    : 'bg-dark/5 text-dark hover:bg-dark/10'
                 }`}
               >
                 {category}

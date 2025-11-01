@@ -4,14 +4,12 @@ import { Icon } from '@iconify/react'
 import Link from 'next/link'
 import { useEffect, useRef, useState, useCallback } from 'react'
 import NavLink from './Navigation/NavLink'
-import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 
 const Header: React.FC = () => {
   const [sticky, setSticky] = useState(false)
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
-  const pathname = usePathname()
 
   const sideMenuRef = useRef<HTMLDivElement>(null)
 
@@ -36,11 +34,9 @@ const Header: React.FC = () => {
     }
   }, [handleScroll])
 
-  const isHomepage = pathname === '/'
-
   return (
     <header className={`fixed z-50 w-full bg-transparent transition-all duration-300 lg:px-0 px-4 ${sticky ? "h-16 py-1 top-3" : "h-24 py-1 top-0"}`}>
-      <nav className={`container mx-auto max-w-8xl flex items-center justify-between duration-300 ${sticky ? "py-2 shadow-lg bg-white dark:bg-dark rounded-full top-5 px-4" : "py-4 shadow-none top-0"}`}>
+      <nav className={`container mx-auto max-w-8xl flex items-center justify-between duration-300 ${sticky ? "py-2 shadow-lg bg-white rounded-full top-5 px-4" : "py-4 shadow-none top-0"}`}>
         <div className='flex justify-between items-center gap-2 w-full'>
           <div className="flex items-center gap-8">
             <Link href='/'>
@@ -60,13 +56,7 @@ const Header: React.FC = () => {
                 <Link
                   key={index}
                   href={item.href}
-                  className={`text-base font-medium transition-colors duration-300 hover:text-primary ${
-                    isHomepage
-                      ? sticky
-                        ? 'text-dark dark:text-white'
-                        : 'text-dark dark:text-white'
-                      : 'text-dark dark:text-white'
-                  }`}
+                  className="text-base font-medium transition-colors duration-300 text-dark hover:text-primary"
                 >
                   {item.label}
                 </Link>
@@ -74,24 +64,14 @@ const Header: React.FC = () => {
             </nav>
           </div>
           <div className='flex items-center gap-2 sm:gap-6'>
-            <Link href='tel:352-652-0259' className={`hidden md:flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-primary/10 ${isHomepage
-              ? sticky
-                ? 'text-dark dark:text-white hover:text-primary'
-                : 'text-dark dark:text-white hover:text-primary'
-              : 'text-dark dark:text-white hover:text-primary'
-              }`}
+            <Link href='tel:352-652-0259' className="hidden md:flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 text-dark hover:bg-primary/10 hover:text-primary"
             >
               <Icon icon={'ph:phone-bold'} width={24} height={24} />
               <span className="text-lg font-medium">352-652-0259</span>
             </Link>
 
-            <div className={`hidden md:block`}>
-              <Link href='/contactus' className={`text-lg font-bold px-8 py-3 rounded-full transition-all duration-300 shadow-xl hover:scale-105 transform ${isHomepage
-                ? sticky
-                  ? 'bg-primary text-white hover:bg-primary/90 hover:shadow-2xl'
-                  : 'bg-primary text-white hover:bg-primary/90 hover:shadow-2xl'
-                : 'bg-primary text-white hover:bg-primary/90 hover:shadow-2xl'
-                }`}
+            <div className="hidden md:block">
+              <Link href='/contactus' className="text-lg font-bold px-8 py-3 rounded-full transition-all duration-300 shadow-xl hover:scale-105 transform bg-primary text-white hover:bg-primary/90 hover:shadow-2xl"
               >
                 Schedule Inspection
               </Link>
@@ -100,12 +80,7 @@ const Header: React.FC = () => {
             <div className="block lg:hidden">
               <button
                 onClick={() => setNavbarOpen(!navbarOpen)}
-                className={`flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border ${isHomepage
-                  ? sticky
-                    ? 'text-white bg-dark dark:bg-white dark:text-dark dark:hover:text-white dark:hover:bg-dark hover:text-dark hover:bg-white border-dark dark:border-white'
-                    : 'text-white bg-dark dark:bg-white dark:text-dark hover:bg-transparent hover:text-dark dark:hover:bg-transparent dark:hover:text-white border-dark dark:border-white'
-                  : 'bg-dark text-white hover:bg-transparent hover:text-dark dark:bg-white dark:text-dark dark:hover:bg-transparent dark:hover:text-white duration-300'
-                  }`}
+                className="flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border bg-dark text-white hover:bg-transparent hover:text-dark border-dark duration-300"
                 aria-label='Toggle mobile menu'>
                 <span>
                   <Icon icon={'ph:list'} width={24} height={24} />

@@ -10,7 +10,7 @@ const ServiceCard: React.FC<{ item: Service }> = ({ item }) => {
 
   return (
     <div>
-      <div className='relative rounded-2xl border border-dark/10 dark:border-white/10 group hover:shadow-3xl duration-300 dark:hover:shadow-white/20'>
+      <div className='relative rounded-2xl border border-dark/10 group hover:shadow-3xl duration-300'>
         <div className='overflow-hidden rounded-t-2xl'>
           <Link href={`/services/${slug}`}>
             {mainImage && (
@@ -41,7 +41,7 @@ const ServiceCard: React.FC<{ item: Service }> = ({ item }) => {
               </div>
               <div className='flex-1'>
                 <Link href={`/services/${slug}`}>
-                  <h3 className='text-xl font-medium text-black dark:text-white duration-300 group-hover:text-primary mb-1'>
+                  <h3 className='text-xl font-medium text-black duration-300 group-hover:text-primary mb-1'>
                     {name}
                   </h3>
                 </Link>
@@ -50,7 +50,7 @@ const ServiceCard: React.FC<{ item: Service }> = ({ item }) => {
                     {category}
                   </p>
                 )}
-                <p className='text-sm text-black/70 dark:text-white/70 line-clamp-3'>
+                <p className='text-sm text-black/70 line-clamp-3'>
                   {description}
                 </p>
               </div>
