@@ -7,7 +7,7 @@ import { Icon } from '@iconify/react';
 import CTA from "@/components/shared/CTA";
 
 interface Params {
-    params: { slug: string };
+    params: Promise<{ slug: string }>;
 }
 
 export async function generateMetadata({ params }: Params) {
