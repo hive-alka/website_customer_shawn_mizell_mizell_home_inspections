@@ -7,12 +7,14 @@ const Hero: React.FC = () => {
       <div className='bg-gradient-to-b from-sky-200/60 via-sky-100/40 to-white overflow-hidden relative'>
         <div className='container max-w-8xl mx-auto px-5 2xl:px-0 pt-28 sm:pt-32 md:pt-40 lg:pt-60 pb-8 md:pb-68'>
           <div className='relative text-dark text-center md:text-start z-10'>
-            <p className='text-dark text-sm sm:text-[15px] font-medium tracking-wide uppercase opacity-75 mb-3'>Professional Home Inspections</p>
+            <p className='text-sm sm:text-base text-dark/70 font-medium mb-3 md:max-w-lg'>
+              We INSPECT what you EXPECT
+            </p>
             <h1 className='text-dark text-3xl sm:text-4xl md:text-5xl lg:text-[56px] leading-[1.1] font-semibold md:max-w-45p mb-4'>
               Your Home&apos;s Safety First
             </h1>
-            <p className='text-base sm:text-[17px] leading-[1.5] text-dark/75 mb-6 md:max-w-lg'>
-              Certified Master Inspector® • 1,000+ Inspections • 24-Hour Reports
+            <p className='text-sm sm:text-base text-dark/60 mb-6 md:max-w-lg'>
+              Certified Master Inspector® • 1,000+ Inspections • 24-Hour Reports • Small, Family-Owned Business
             </p>
             <div className='flex flex-col xs:flex-row justify-center md:justify-start gap-4 mb-8 md:mb-0'>
               <Link href="/contactus" className='px-8 py-4 bg-primary text-white hover:bg-dark duration-300 text-base font-semibold rounded-full hover:cursor-pointer'>
