@@ -1,4 +1,4 @@
-import { getAllPosts, getPostBySlug } from "@/components/utils/markdown";
+import { getPostBySlug } from "@/components/utils/markdown";
 import markdownToHtml from "@/components/utils/markdownToHtml";
 import { format } from "date-fns";
 import Image from "next/image";
@@ -6,13 +6,12 @@ import Link from "next/link";
 import { Icon } from '@iconify/react';
 import CTA from "@/components/shared/CTA";
 
-type Props = {
+interface Params {
     params: { slug: string };
-};
+}
 
-export async function generateMetadata({ params }: any) {
+export async function generateMetadata({ params }: Params) {
     const data = await params;
-    const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
     const post = getPostBySlug(data.slug, [
         "title",
         "author",
@@ -63,9 +62,8 @@ export async function generateMetadata({ params }: any) {
     }
 }
 
-export default async function Post({ params }: any) {
+export default async function Post({ params }: Params) {
     const data = await params;
-    const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
     const post = getPostBySlug(data.slug, [
         "title",
         "author",

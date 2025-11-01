@@ -8,7 +8,7 @@ const About: React.FC = () => {
   return (
     <section className='bg-gray-50'>
       <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center'>
           {/* Left side - Image */}
           <div className='relative'>
             <div className='relative rounded-2xl overflow-hidden shadow-lg h-full'>
@@ -37,10 +37,10 @@ const About: React.FC = () => {
                   Meet Your Inspector
                 </p>
               </div>
-              <h2 className='text-[40px] leading-[1.2] font-semibold text-dark mb-4'>
+              <h2 className='text-2xl sm:text-3xl md:text-[40px] leading-[1.2] font-semibold text-dark mb-4'>
                 Inspector Shawn
               </h2>
-              <p className='text-[18px] leading-[1.6] text-dark/70 mb-6'>
+              <p className='text-base sm:text-[17px] md:text-[18px] leading-[1.6] text-dark/70 mb-6'>
                 Certified Master Inspector® with 1,000+ inspections across Central Florida. Providing thorough, professional inspections backed by experience and integrity.
               </p>
             </div>

@@ -1,7 +1,6 @@
 'use client'
 
 import { Icon } from '@iconify/react'
-import Image from 'next/image'
 import Link from 'next/link'
 import HeroSub from '@/components/shared/HeroSub'
 import CTA from '@/components/shared/CTA'

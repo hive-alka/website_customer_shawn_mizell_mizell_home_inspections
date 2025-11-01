@@ -5,16 +5,16 @@ const Hero: React.FC = () => {
   return (
     <section className='!py-0'>
       <div className='bg-gradient-to-b from-sky-200/60 via-sky-100/40 to-white overflow-hidden relative'>
-        <div className='container max-w-8xl mx-auto px-5 2xl:px-0 pt-32 md:pt-60 md:pb-68'>
+        <div className='container max-w-8xl mx-auto px-5 2xl:px-0 pt-28 sm:pt-32 md:pt-40 lg:pt-60 pb-8 md:pb-68'>
           <div className='relative text-dark text-center md:text-start z-10'>
-            <p className='text-dark text-[15px] font-medium tracking-wide uppercase opacity-75 mb-3'>Professional Home Inspections</p>
-            <h1 className='text-dark text-[56px] leading-[1.1] font-semibold md:max-w-45p mb-4'>
+            <p className='text-dark text-sm sm:text-[15px] font-medium tracking-wide uppercase opacity-75 mb-3'>Professional Home Inspections</p>
+            <h1 className='text-dark text-3xl sm:text-4xl md:text-5xl lg:text-[56px] leading-[1.1] font-semibold md:max-w-45p mb-4'>
               Your Home&apos;s Safety First
             </h1>
-            <p className='text-[17px] leading-[1.5] text-dark/75 mb-6 md:max-w-lg'>
+            <p className='text-base sm:text-[17px] leading-[1.5] text-dark/75 mb-6 md:max-w-lg'>
               Certified Master Inspector® • 1,000+ Inspections • 24-Hour Reports
             </p>
-            <div className='flex flex-col xs:flex-row justify-center md:justify-start gap-4'>
+            <div className='flex flex-col xs:flex-row justify-center md:justify-start gap-4 mb-8 md:mb-0'>
               <Link href="/contactus" className='px-8 py-4 bg-primary text-white hover:bg-dark duration-300 text-base font-semibold rounded-full hover:cursor-pointer'>
                 Schedule Inspection
               </Link>
@@ -34,39 +34,39 @@ const Hero: React.FC = () => {
             />
           </div>
         </div>
-        <div className='md:absolute bottom-0 md:-right-68 xl:right-0 bg-white py-20 px-8 mobile:px-16 md:pl-16 md:pr-8 rounded-t-2xl md:rounded-none md:rounded-tl-2xl mt-24 shadow-lg'>
+        <div className='md:absolute bottom-0 md:-right-68 xl:right-0 bg-white py-8 sm:py-12 md:py-20 px-4 sm:px-6 md:pl-16 md:pr-8 rounded-t-2xl md:rounded-none md:rounded-tl-2xl mt-0 md:mt-24 shadow-lg'>
           {/* Simplified Social Proof Section */}
-          <div className='flex flex-col md:flex-row items-center justify-end gap-12'>
+          <div className='flex flex-col md:flex-row items-center justify-end gap-6 sm:gap-8 md:gap-12'>
             {/* Google Reviews - Clean Design */}
-            <a 
+            <a
               href="https://www.google.com/search?q=mizellhomeinspections&oq=mizell+&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyDAgCECMYJxiABBiKBTINCAMQLhivARjHARiABDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg90gEIMjI1MGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
               target="_blank"
               rel="noopener noreferrer"
-              className='flex items-center gap-4 hover:opacity-80 transition-opacity duration-300'
+              className='flex items-center gap-3 hover:opacity-80 transition-opacity duration-300'
             >
-              <span className='text-yellow-500 text-4xl'>★★★★★</span>
+              <span className='text-yellow-500 text-3xl sm:text-4xl'>★★★★★</span>
               <div>
-                <p className='text-xl font-bold text-gray-800'>5.0 Google Reviews</p>
+                <p className='text-lg sm:text-xl font-bold text-gray-800'>5.0 Google Reviews</p>
               </div>
             </a>
 
             {/* Certifications & Service Area - Minimal */}
-            <div className='flex flex-col sm:flex-row items-center gap-8 text-xl text-gray-600'>
-              <div className='flex items-center gap-4'>
+            <div className='flex flex-col sm:flex-row items-center gap-4 sm:gap-6 md:gap-8 text-base sm:text-lg md:text-xl text-gray-600'>
+              <div className='flex items-center gap-3'>
                 <Image
                   src='/images/internachi-certified.webp'
                   alt='InterNACHI Certified'
-                  width={48}
-                  height={48}
-                  className='object-contain'
+                  width={40}
+                  height={40}
+                  className='object-contain sm:w-12 sm:h-12'
                   unoptimized={true}
                 />
-                <span>InterNACHI Certified</span>
+                <span className='text-sm sm:text-base md:text-lg'>InterNACHI Certified</span>
               </div>
-              
-              <div className='flex items-center gap-4'>
-                <span className='text-3xl'>📍</span>
-                <span>Central FL: Gainesville to St Pete & Orlando</span>
+
+              <div className='flex items-center gap-3 text-center sm:text-left'>
+                <span className='text-2xl sm:text-3xl'>📍</span>
+                <span className='text-sm sm:text-base md:text-lg'>Central FL: Gainesville to St Pete & Orlando</span>
               </div>
             </div>
           </div>

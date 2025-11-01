@@ -23,7 +23,7 @@ const Categories = () => {
               <Icon icon="ph:house-simple-fill" className="text-2xl text-primary " />
               Our Services
             </p>
-            <h2 className="text-[40px] leading-[1.2] font-semibold text-dark mt-4 mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-[40px] leading-[1.2] font-semibold text-dark mt-4 mb-4">
               Professional Home Inspection Services
             </h2>
             <p className="text-[17px] leading-[1.5] text-dark/60 lg:max-w-full md:max-w-3/4">
@@ -47,7 +47,7 @@ const Categories = () => {
                   unoptimized={true}
                 />
               </div>
-              <div className="lg:w-[55%] w-full p-8 flex flex-col justify-between">
+              <div className="lg:w-[55%] w-full p-4 sm:p-6 md:p-8 flex flex-col justify-between">
                 <div>
                   <h3 className="text-dark text-2xl font-semibold mb-3">
                     {serviceCategories[0].name}
@@ -78,7 +78,7 @@ const Categories = () => {
                   unoptimized={true}
                 />
               </div>
-              <div className="lg:w-[55%] w-full p-8 flex flex-col justify-between">
+              <div className="lg:w-[55%] w-full p-4 sm:p-6 md:p-8 flex flex-col justify-between">
                 <div>
                   <h3 className="text-dark text-2xl font-semibold mb-3">
                     {serviceCategories[1].name}
@@ -109,7 +109,7 @@ const Categories = () => {
                   unoptimized={true}
                 />
               </div>
-              <div className="lg:w-[55%] w-full p-8 flex flex-col justify-between">
+              <div className="lg:w-[55%] w-full p-4 sm:p-6 md:p-8 flex flex-col justify-between">
                 <div>
                   <h3 className="text-dark text-2xl font-semibold mb-3">
                     {serviceCategories[2].name}
