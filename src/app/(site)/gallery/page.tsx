@@ -14,17 +14,27 @@ interface GalleryImage {
 }
 
 const galleryImages: GalleryImage[] = [
-  { id: 1, src: '/images/gallery/gallery2-1920w.webp', alt: 'Residential Inspection 1', category: 'Residential' },
-  { id: 2, src: '/images/gallery/gallery4-1920w.webp', alt: 'Residential Inspection 2', category: 'Residential' },
-  { id: 3, src: '/images/gallery/gallery5-1920w.webp', alt: 'Residential Inspection 3', category: 'Residential' },
-  { id: 4, src: '/images/gallery/gallery6-1920w.webp', alt: 'Residential Inspection 4', category: 'Residential' },
-  { id: 5, src: '/images/gallery/gallery7-1920w.webp', alt: 'Residential Inspection 5', category: 'Residential' },
-  { id: 6, src: '/images/gallery/gallery8-1920w.webp', alt: 'Residential Inspection 6', category: 'Residential' },
-  { id: 7, src: '/images/gallery/FB_IMG_1695315253528-1920w.webp', alt: 'Real Estate Photography 1', category: 'Photography' },
-  { id: 8, src: '/images/gallery/FB_IMG_1695315380866-1920w.webp', alt: 'Real Estate Photography 2', category: 'Photography' },
+  { id: 1, src: '/images/gallery/gallery2-1920w.webp', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 2, src: '/images/gallery/gallery4-1920w.webp', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 3, src: '/images/gallery/gallery5-1920w.webp', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 4, src: '/images/gallery/gallery6-1920w.webp', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 5, src: '/images/gallery/gallery7-1920w.webp', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 6, src: '/images/gallery/gallery8-1920w.webp', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 7, src: '/images/gallery/FB_IMG_1695315253528-1920w.webp', alt: 'Real Estate Photography', category: 'Real Estate Photography' },
+  { id: 8, src: '/images/gallery/FB_IMG_1695315380866-1920w.webp', alt: 'Real Estate Photography', category: 'Real Estate Photography' },
+  { id: 9, src: '/images/gallery/FB_IMG_1695315562375.jpg', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 10, src: '/images/gallery/FB_IMG_1695315729568.jpg', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 11, src: '/images/gallery/FB_IMG_1761484857081.jpg', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 12, src: '/images/gallery/FB_IMG_1761484869119.jpg', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 13, src: '/images/gallery/FB_IMG_1761485218663.jpg', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 14, src: '/images/gallery/FB_IMG_1761485265232.jpg', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 15, src: '/images/gallery/FB_IMG_1761485320168.jpg', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 16, src: '/images/gallery/FB_IMG_1761485367048.jpg', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 17, src: '/images/gallery/FB_IMG_1761485442214.jpg', alt: 'Home Inspection', category: 'Home Inspection' },
+  { id: 18, src: '/images/gallery/FB_IMG_1761485475395.jpg', alt: 'Home Inspection', category: 'Home Inspection' },
 ]
 
-const categories = ['All', 'Residential', 'Photography']
+const categories = ['All', 'Home Inspection', 'Real Estate Photography']
 
 const GalleryPage = () => {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null)
@@ -92,12 +102,6 @@ const GalleryPage = () => {
                   className='object-cover group-hover:scale-110 transition-transform duration-500'
                   unoptimized={true}
                 />
-                <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-                  <div className='absolute bottom-0 left-0 right-0 p-4'>
-                    <p className='text-white font-semibold text-sm'>{image.alt}</p>
-                    <p className='text-white/80 text-xs'>{image.category}</p>
-                  </div>
-                </div>
                 <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
                   <div className='w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center'>
                     <Icon icon='ph:magnifying-glass-plus' className='text-white text-2xl' />
@@ -105,13 +109,6 @@ const GalleryPage = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Show count */}
-          <div className='text-center mt-12'>
-            <p className='text-dark/60 dark:text-white/60'>
-              Showing {filteredImages.length} {selectedCategory !== 'All' ? selectedCategory : ''} {filteredImages.length === 1 ? 'photo' : 'photos'}
-            </p>
           </div>
         </div>
       </section>

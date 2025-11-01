@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react'
 import Link from 'next/link'
 import { Metadata } from 'next'
+import HeroSub from '@/components/shared/HeroSub'
 
 export const metadata: Metadata = {
   title: 'Terms of Service | Mizell Home Inspections',
@@ -9,23 +10,13 @@ export const metadata: Metadata = {
 
 export default function TermsOfService() {
   return (
-    <div className='container max-w-5xl mx-auto px-5 2xl:px-0 pt-32 md:pt-44 pb-14 md:pb-28'>
-      <div className='mb-12'>
-        <div className='flex gap-2.5 items-center justify-center mb-3'>
-          <Icon icon='ph:file-text' width={24} height={24} className='text-primary' />
-          <p className='text-base font-semibold text-badge dark:text-white/90'>
-            Legal
-          </p>
-        </div>
-        <div className='text-center mb-8'>
-          <h1 className='text-4xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3 leading-10 sm:leading-14'>
-            Terms of Service
-          </h1>
-          <p className='text-sm text-black/50 dark:text-white/50'>
-            Last Updated: January 2025
-          </p>
-        </div>
-      </div>
+    <>
+      <HeroSub
+        title="Terms of Service"
+        description="Last Updated: January 2025"
+        badge="Legal"
+      />
+      <div className='container max-w-5xl mx-auto px-5 2xl:px-0 pb-14 md:pb-28'>
 
       <div className='prose prose-lg dark:prose-invert max-w-none'>
         <div className='bg-white dark:bg-white/5 rounded-2xl p-8 border border-black/10 dark:border-white/10 shadow-lg'>
@@ -89,7 +80,7 @@ export default function TermsOfService() {
           <section className='mb-8'>
             <h2 className='text-2xl font-semibold text-black dark:text-white mb-4'>6. Inspection Reports</h2>
             <p className='text-black/70 dark:text-white/70 mb-4'>
-              Inspection reports will be delivered within 24-48 hours of the completed inspection. Reports are provided digitally and are for the exclusive use of the client who engaged our services.
+              Inspection reports will be delivered within 24 hours of the completed inspection. Reports are provided digitally and are for the exclusive use of the client who engaged our services.
             </p>
             <p className='text-black/70 dark:text-white/70 mb-4'>
               Reports may not be transferred, assigned, or provided to third parties without our written consent.
@@ -156,6 +147,7 @@ export default function TermsOfService() {
           </Link>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

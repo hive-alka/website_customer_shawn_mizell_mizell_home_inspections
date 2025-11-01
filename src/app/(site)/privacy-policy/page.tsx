@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react'
 import Link from 'next/link'
 import { Metadata } from 'next'
+import HeroSub from '@/components/shared/HeroSub'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Mizell Home Inspections',
@@ -9,23 +10,13 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <div className='container max-w-5xl mx-auto px-5 2xl:px-0 pt-32 md:pt-44 pb-14 md:pb-28'>
-      <div className='mb-12'>
-        <div className='flex gap-2.5 items-center justify-center mb-3'>
-          <Icon icon='ph:shield-check' width={24} height={24} className='text-primary' />
-          <p className='text-base font-semibold text-badge dark:text-white/90'>
-            Legal
-          </p>
-        </div>
-        <div className='text-center mb-8'>
-          <h1 className='text-4xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3 leading-10 sm:leading-14'>
-            Privacy Policy
-          </h1>
-          <p className='text-sm text-black/50 dark:text-white/50'>
-            Last Updated: January 2025
-          </p>
-        </div>
-      </div>
+    <>
+      <HeroSub
+        title="Privacy Policy"
+        description="Last Updated: January 2025"
+        badge="Legal"
+      />
+      <div className='container max-w-5xl mx-auto px-5 2xl:px-0 pb-14 md:pb-28'>
 
       <div className='prose prose-lg dark:prose-invert max-w-none'>
         <div className='bg-white dark:bg-white/5 rounded-2xl p-8 border border-black/10 dark:border-white/10 shadow-lg'>
@@ -167,6 +158,7 @@ export default function PrivacyPolicy() {
           </Link>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

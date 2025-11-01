@@ -4,7 +4,6 @@ import { Icon } from '@iconify/react'
 import Link from 'next/link'
 import { useEffect, useRef, useState, useCallback } from 'react'
 import NavLink from './Navigation/NavLink'
-import { useTheme } from 'next-themes'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 
@@ -12,7 +11,6 @@ const Header: React.FC = () => {
   const [sticky, setSticky] = useState(false)
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
   const pathname = usePathname()
 
   const sideMenuRef = useRef<HTMLDivElement>(null)
@@ -66,7 +64,7 @@ const Header: React.FC = () => {
                     isHomepage
                       ? sticky
                         ? 'text-dark dark:text-white'
-                        : 'text-white'
+                        : 'text-dark dark:text-white'
                       : 'text-dark dark:text-white'
                   }`}
                 >
@@ -76,19 +74,17 @@ const Header: React.FC = () => {
             </nav>
           </div>
           <div className='flex items-center gap-2 sm:gap-6'>
-            <div className={`hidden md:block`}>
-              <Link href='tel:352-652-0259' className={`text-lg font-medium flex items-center gap-3 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-primary/10 ${isHomepage
-                ? sticky
-                  ? 'text-dark dark:text-white hover:text-primary'
-                  : 'text-white hover:text-primary'
-                : 'text-dark hover:text-primary'
-                }`}
-              >
-                <Icon icon={'ph:phone-bold'} width={28} height={28} />
-                <span><span className="font-bold">Call</span> 352-652-0259</span>
-              </Link>
-            </div>
-            
+            <Link href='tel:352-652-0259' className={`hidden md:flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 hover:bg-primary/10 ${isHomepage
+              ? sticky
+                ? 'text-dark dark:text-white hover:text-primary'
+                : 'text-dark dark:text-white hover:text-primary'
+              : 'text-dark dark:text-white hover:text-primary'
+              }`}
+            >
+              <Icon icon={'ph:phone-bold'} width={24} height={24} />
+              <span className="text-lg font-medium">352-652-0259</span>
+            </Link>
+
             <div className={`hidden md:block`}>
               <Link href='/contactus' className={`text-lg font-bold px-8 py-3 rounded-full transition-all duration-300 shadow-xl hover:scale-105 transform ${isHomepage
                 ? sticky
@@ -101,38 +97,13 @@ const Header: React.FC = () => {
               </Link>
             </div>
             
-            {mounted && (
-              <button
-                className='hover:cursor-pointer'
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              >
-                <Icon
-                  icon={'solar:sun-bold'}
-                  width={32}
-                  height={32}
-                  className={`dark:hidden block ${isHomepage
-                    ? sticky
-                      ? 'text-dark'
-                      : 'text-white'
-                    : 'text-dark'
-                    }`}
-                />
-                <Icon
-                  icon={'solar:moon-bold'}
-                  width={32}
-                  height={32}
-                  className='dark:block hidden text-white'
-                />
-              </button>
-            )}
-            
             <div className="block lg:hidden">
               <button
                 onClick={() => setNavbarOpen(!navbarOpen)}
                 className={`flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border ${isHomepage
                   ? sticky
                     ? 'text-white bg-dark dark:bg-white dark:text-dark dark:hover:text-white dark:hover:bg-dark hover:text-dark hover:bg-white border-dark dark:border-white'
-                    : 'text-dark bg-white dark:text-dark hover:bg-transparent hover:text-white border-white'
+                    : 'text-white bg-dark dark:bg-white dark:text-dark hover:bg-transparent hover:text-dark dark:hover:bg-transparent dark:hover:text-white border-dark dark:border-white'
                   : 'bg-dark text-white hover:bg-transparent hover:text-dark dark:bg-white dark:text-dark dark:hover:bg-transparent dark:hover:text-white duration-300'
                   }`}
                 aria-label='Toggle mobile menu'>
@@ -184,14 +155,6 @@ const Header: React.FC = () => {
                 {navLinks.map((item, index) => (
                   <NavLink key={index} item={item} onClick={() => setNavbarOpen(false)} />
                 ))}
-                <li className='flex items-center gap-4'>
-                  <Link href="/signin" className='py-4 px-8 bg-primary text-base leading-4 block w-fit text-white rounded-full border border-primary font-semibold mt-3 hover:bg-transparent hover:text-primary duration-300'>
-                    Sign In
-                  </Link>
-                  <Link href="/" className='py-4 px-8 bg-transparent border border-primary text-base leading-4 block w-fit text-primary rounded-full font-semibold mt-3 hover:bg-primary hover:text-white duration-300'>
-                    Sign up
-                  </Link>
-                </li>
               </ul>
             </nav>
           </div>

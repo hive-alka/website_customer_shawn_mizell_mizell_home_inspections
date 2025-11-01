@@ -34,7 +34,7 @@ const ServicesPage = () => {
         <>
             <HeroSub
                 title="Our Professional Services"
-                description="Serving Hillsborough County up to Marion County and surrounding areas. Call 352-652-0259 for a free over-the-phone quote."
+                description="Serving from Gainesville down to St Pete, West Coast over to Orlando. Call 352-652-0259 for a free over-the-phone quote."
                 badge="Services"
             />
 
@@ -69,7 +69,7 @@ const ServicesPage = () => {
                                     </h2>
                                 </div>
                                 <p className='text-dark/70 dark:text-white/70 text-base mb-6'>
-                                    Whether you are purchasing a pre-existing home or have a new build, Mizell Home Inspections LLC aims to satisfy all clients by providing an honest and thorough inspection. We inspect homes and businesses in Hillsborough County, up to Marion County and the surrounding areas.
+                                    Whether you are purchasing a pre-existing home or have a new build, Mizell Home Inspections LLC aims to satisfy all clients by providing an honest and thorough inspection. We inspect homes and businesses from Gainesville down to St Pete, West Coast over to Orlando.
                                 </p>
                                 <p className='text-dark/70 dark:text-white/70 text-base mb-6'>
                                     Our goal is to give you an accurate understanding of the home you are purchasing and find the right fit for your needs. We can provide your builder or warranty representative with a detailed report of our findings.
@@ -126,7 +126,7 @@ const ServicesPage = () => {
                                     </h2>
                                 </div>
                                 <p className='text-dark/70 dark:text-white/70 text-base mb-6'>
-                                    Do you have mold problems or are not sure but think you might? Make sure to call Mizell Home Inspections LLC today! Our inspector, Shawn, will provide a complete home health evaluation in Hillsborough County, up to Marion County and the surrounding areas.
+                                    Do you have mold problems or are not sure but think you might? Make sure to call Mizell Home Inspections LLC today! Our inspector, Shawn, will provide a complete home health evaluation from Gainesville down to St Pete, West Coast over to Orlando.
                                 </p>
                                 <p className='text-dark/70 dark:text-white/70 text-base mb-6'>
                                     Our testing services will not only test the type of mold you have but also evaluate the quality of air in your home. This will help you know what hazards are present that can damage your health. If your property tests positive for mold content and needs remediation, we can refer you to reputable companies that provide remediation services.

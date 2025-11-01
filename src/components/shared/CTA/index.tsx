@@ -4,44 +4,13 @@ const CTA: React.FC = () => {
     return (
         <section>
             <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
-                <div className="relative rounded-t-2xl overflow-hidden">
-                    <video
-                        className="w-full absolute top-0 left-0 object-cover -z-10"
-                        autoPlay
-                        loop
-                        muted
-                        aria-label="Video background showing home inspection"
-                    >
-                        <source src="https://videos.pexels.com/video-files/7233782/7233782-hd_1920_1080_25fps.mp4" type="video/mp4" />
-                    </video>
-
-                    <div className="bg-black/30 lg:py-64 md:py-28 py-10">
-                        <div className="flex flex-col items-center gap-8">
-                            <h2 className='text-white lg:text-52 md:text-40 text-3xl max-w-3/4 text-center font-medium'>
-                                Don&apos;t risk buying blind. Get peace of mind with
-                                a thorough inspection from a Certified Master Inspector®.
-                            </h2>
-                            <Link href="/contactus" className='bg-white py-4 px-8 rounded-full text-dark hover:bg-dark hover:text-white duration-300 font-semibold text-lg'>
-                                Schedule Your Inspection Today
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-                <div className="w-full py-5 bg-primary rounded-b-2xl overflow-hidden">
-                    <div className="flex items-center gap-40 animate-slide">
-                        <p className='text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32'>
-                            SCHEDULE YOUR HOME INSPECTION TODAY—PEACE OF MIND IS JUST A CALL AWAY!
-                        </p>
-                        <p className='text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32'>
-                            COMPREHENSIVE INSPECTIONS FOR BUYERS, SELLERS, AND HOMEOWNERS!
-                        </p>
-                        <p className='text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32'>
-                            SCHEDULE YOUR HOME INSPECTION TODAY—PEACE OF MIND IS JUST A CALL AWAY!
-                        </p>
-                        <p className='text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32'>
-                            COMPREHENSIVE INSPECTIONS FOR BUYERS, SELLERS, AND HOMEOWNERS!
-                        </p>
-                    </div>
+                <div className="flex flex-col items-center gap-8">
+                    <h2 className='text-dark dark:text-white text-[40px] leading-[1.2] max-w-2xl text-center font-semibold'>
+                        Ready for Your Home Inspection?
+                    </h2>
+                    <Link href="/contactus" className='bg-primary py-4 px-8 rounded-full text-white hover:bg-dark duration-300 font-semibold text-lg'>
+                        Schedule Your Inspection Today
+                    </Link>
                 </div>
             </div>
         </section>

@@ -15,7 +15,32 @@
   --shadow-auth: 0 20px 25px -5px #0000001a;
   --shadow-dark-auth: rgba(255, 255, 255, 0.1) 0px 12px 28px 0px, rgba(255, 255, 255, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 
-  /* font size */
+  /* Apple-Style Typography Scale (4 sizes only) */
+  /* Display: Hero sections only */
+  --text-display: 3.5rem; /* 56px */
+  --text-display-line-height: 1.1;
+
+  /* Title 1: Page headings */
+  --text-title-1: 2.5rem; /* 40px */
+  --text-title-1-line-height: 1.2;
+
+  /* Title 2: Section headings */
+  --text-title-2: 2rem; /* 32px */
+  --text-title-2-line-height: 1.25;
+
+  /* Title 3: Card/Component headings */
+  --text-title-3: 1.5rem; /* 24px */
+  --text-title-3-line-height: 1.3;
+
+  /* Body: All body text */
+  --text-body: 1.0625rem; /* 17px - Apple's body size */
+  --text-body-line-height: 1.5;
+
+  /* Caption: Small text, labels */
+  --text-caption: 0.9375rem; /* 15px */
+  --text-caption-line-height: 1.4;
+
+  /* Legacy sizes (deprecated - will remove) */
   --text-xm: 1.125rem;
   --text-9xl: 6.5rem;
   --text-40: 2.5rem;

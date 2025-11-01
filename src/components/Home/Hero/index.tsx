@@ -4,23 +4,21 @@ import Link from 'next/link'
 const Hero: React.FC = () => {
   return (
     <section className='!py-0'>
-      <div className='bg-gradient-to-b from-skyblue via-lightskyblue dark:via-[#4298b0] to-white/10 dark:to-black/10 overflow-hidden relative'>
+      <div className='bg-gradient-to-b from-primary/10 to-primary/5 dark:from-primary/10 dark:to-dark overflow-hidden relative'>
         <div className='container max-w-8xl mx-auto px-5 2xl:px-0 pt-32 md:pt-60 md:pb-68'>
-          <div className='relative text-white dark:text-dark text-center md:text-start z-10'>
-            <p className='text-inherit text-xm font-medium'>Professional Home Inspections</p>
-            <h1 className='text-inherit text-5xl sm:text-7xl lg:text-8xl font-semibold -tracking-wider md:max-w-45p mt-4 mb-4'>
+          <div className='relative text-dark dark:text-white text-center md:text-start z-10'>
+            <p className='text-inherit text-[15px] font-medium tracking-wide uppercase opacity-75 mb-3'>Professional Home Inspections</p>
+            <h1 className='text-inherit text-[56px] leading-[1.1] font-semibold md:max-w-45p mb-4'>
               Your Home's Safety First
             </h1>
-            <p className='text-xl font-bold text-primary mb-2'>We INSPECT what you EXPECT!</p>
-            <p className='text-lg text-white/90 dark:text-dark/90 mb-6'>We are a small, family-owned business.</p>
-            <p className='text-white/90 dark:text-dark/90 text-lg font-medium mb-6'>
-              5000+ Inspections • Commercial and Residential • Same Day Reports • Fully Licensed and Insured
+            <p className='text-[17px] leading-[1.5] text-dark/75 dark:text-white/75 mb-6 md:max-w-lg'>
+              Certified Master Inspector® • 1,000+ Inspections • 24-Hour Reports
             </p>
             <div className='flex flex-col xs:flex-row justify-center md:justify-start gap-4'>
-              <Link href="/contactus" className='px-8 py-4 border border-white dark:border-dark bg-white dark:bg-dark text-dark dark:text-white duration-300 dark:hover:text-dark hover:bg-transparent hover:text-white text-base font-semibold rounded-full hover:cursor-pointer'>
+              <Link href="/contactus" className='px-8 py-4 bg-primary text-white hover:bg-dark duration-300 text-base font-semibold rounded-full hover:cursor-pointer'>
                 Schedule Inspection
               </Link>
-              <Link href="/services" className='px-8 py-4 border border-white dark:border-dark bg-transparent text-white dark:text-dark hover:bg-white dark:hover:bg-dark dark:hover:text-white hover:text-dark duration-300 text-base font-semibold rounded-full hover:cursor-pointer'>
+              <Link href="/services" className='px-8 py-4 border border-dark dark:border-white bg-transparent text-dark dark:text-white hover:bg-dark dark:hover:bg-white hover:text-white dark:hover:text-dark duration-300 text-base font-semibold rounded-full hover:cursor-pointer'>
                 Our Services
               </Link>
             </div>
@@ -36,9 +34,9 @@ const Hero: React.FC = () => {
             />
           </div>
         </div>
-        <div className='md:absolute bottom-0 md:-right-68 xl:right-0 bg-white dark:bg-black py-20 px-8 mobile:px-16 md:pl-16 md:pr-[295px] rounded-t-2xl md:rounded-none md:rounded-tl-2xl mt-24 shadow-lg'>
+        <div className='md:absolute bottom-0 md:-right-68 xl:right-0 bg-white dark:bg-black py-20 px-8 mobile:px-16 md:pl-16 md:pr-8 rounded-t-2xl md:rounded-none md:rounded-tl-2xl mt-24 shadow-lg'>
           {/* Simplified Social Proof Section */}
-          <div className='flex flex-col md:flex-row items-center justify-between gap-12'>
+          <div className='flex flex-col md:flex-row items-center justify-end gap-12'>
             {/* Google Reviews - Clean Design */}
             <a 
               href="https://www.google.com/search?q=mizellhomeinspections&oq=mizell+&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyDAgCECMYJxiABBiKBTINCAMQLhivARjHARiABDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg90gEIMjI1MGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8"
@@ -68,7 +66,7 @@ const Hero: React.FC = () => {
               
               <div className='flex items-center gap-4'>
                 <span className='text-3xl'>📍</span>
-                <span>Gainesville - Orlando</span>
+                <span>Central FL: Gainesville to St Pete & Orlando</span>
               </div>
             </div>
           </div>

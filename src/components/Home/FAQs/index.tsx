@@ -1,5 +1,4 @@
 import { Icon } from '@iconify/react';
-import Image from 'next/image';
 import {
     Accordion,
     AccordionContent,
@@ -11,27 +10,17 @@ const FAQ: React.FC = () => {
     return (
         <section id='faqs'>
             <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
-                <div className="grid lg:grid-cols-2 gap-10 ">
-                    <div className='lg:mx-0 mx-auto'>
-                        <Image
-                            src="/images/faqs/faq-image.png"
-                            alt='image'
-                            width={680}
-                            height={644}
-                            className='lg:w-full'
-                            unoptimized={true}
-                        />
-                    </div>
-                    <div className='lg:px-12'>
+                <div className="max-w-5xl mx-auto">
+                    <div>
                         <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2">
                             <Icon icon="mdi:help-circle" className="text-2xl text-primary " />
                             FAQs
                         </p>
-                        <h2 className='lg:text-52 text-40 leading-[1.2] font-medium text-dark dark:text-white'>
+                        <h2 className='text-[40px] leading-[1.2] font-semibold text-dark dark:text-white mb-4'>
                             Home Inspection Questions Answered
                         </h2>
-                        <p className='text-dark/50 dark:text-white/50 pr-20'>
-                            We understand you have questions about home inspections. Here are the most common questions we receive from homebuyers and sellers.
+                        <p className='text-[17px] leading-[1.5] text-dark/60 dark:text-white/60 pr-20'>
+                            Common questions from homebuyers and sellers answered.
                         </p>
                         <div className="my-8">
                             <Accordion type="single" defaultValue="item-1" collapsible className="w-full flex flex-col gap-6">
@@ -44,7 +33,7 @@ const FAQ: React.FC = () => {
                                 <AccordionItem value="item-2">
                                     <AccordionTrigger>2. When will I receive my inspection report?</AccordionTrigger>
                                     <AccordionContent>
-                                        You&apos;ll receive your detailed inspection report within 24-48 hours after the inspection. The report includes high-resolution photos, clear descriptions of all findings, and recommendations for repairs or further evaluation. We&apos;re also available after delivery to answer any questions about the report.
+                                        You&apos;ll receive your detailed inspection report within 24 hours after the inspection. The report includes high-resolution photos, clear descriptions of all findings, and recommendations for repairs or further evaluation. We&apos;re also available after delivery to answer any questions about the report.
                                     </AccordionContent>
                                 </AccordionItem>
                                 <AccordionItem value="item-3">
@@ -56,7 +45,7 @@ const FAQ: React.FC = () => {
                                 <AccordionItem value="item-4">
                                     <AccordionTrigger>4. How much does a home inspection cost?</AccordionTrigger>
                                     <AccordionContent>
-                                        Home inspection costs vary based on the size, age, and location of the property. Most inspections range from $300-$600 for a typical single-family home. Contact us for a free quote tailored to your specific property. Additional services like mold testing or commercial inspections are priced separately.
+                                        Home inspection costs vary based on the size, age, and location of the property. Contact us for a free quote tailored to your specific property. Additional services like mold testing or commercial inspections are priced separately.
                                     </AccordionContent>
                                 </AccordionItem>
                                 <AccordionItem value="item-5">

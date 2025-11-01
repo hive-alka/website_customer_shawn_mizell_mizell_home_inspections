@@ -5,33 +5,33 @@ import { Icon } from '@iconify/react'
 const reasons = [
   {
     icon: 'mdi:certificate-outline',
-    title: 'Certified & Experienced',
-    description: 'Licensed home inspector with years of experience and industry certifications to ensure thorough, professional inspections.'
+    title: 'Certified Master Inspector®',
+    description: 'Licensed and certified with years of experience and industry-leading credentials ensuring thorough, professional inspections.'
   },
   {
     icon: 'mdi:clock-fast',
-    title: 'Fast Turnaround',
-    description: 'Detailed inspection reports delivered within 24-48 hours, helping you make informed decisions quickly.'
+    title: '24-Hour Report Delivery',
+    description: 'Detailed inspection reports delivered within 24 hours with high-resolution photos and clear recommendations.'
   },
   {
-    icon: 'mdi:shield-check',
-    title: 'Comprehensive Reports',
-    description: 'Easy-to-understand reports with photos, detailed findings, and recommendations for every area inspected.'
+    icon: 'mdi:magnify-plus-outline',
+    title: 'We Notice the Little Things',
+    description: 'Our inspectors crawl into the smallest spaces and deepest corners using infrared cameras, moisture meters, and drones.'
   },
   {
-    icon: 'mdi:handshake',
-    title: 'Client-Focused Service',
-    description: 'We work around your schedule and are available to answer questions even after the inspection is complete.'
+    icon: 'mdi:message-text-outline',
+    title: 'Strong Communication',
+    description: 'We\'re available before, during, and after your inspection. Honest communication is part of our business model.'
   },
   {
-    icon: 'mdi:home-search',
-    title: 'Thorough Inspections',
-    description: 'No stone left unturned - from foundation to roof, we inspect every accessible component of your property.'
+    icon: 'mdi:tools',
+    title: 'State-of-the-Art Tools',
+    description: 'Advanced inspection equipment including thermal imaging, moisture detection, and drone technology for comprehensive analysis.'
   },
   {
     icon: 'mdi:star-circle',
-    title: 'Trusted by the Community',
-    description: 'Highly rated by homebuyers, sellers, and real estate professionals throughout the region.'
+    title: '1,000+ Inspections',
+    description: 'Trusted by homebuyers, sellers, and real estate professionals throughout Central Florida with a 5.0 Google rating.'
   }
 ]
 
@@ -53,10 +53,10 @@ const WhyChooseUs: React.FC = () => {
               Why Choose Us
             </p>
           </div>
-          <h2 className='text-40 lg:text-52 font-medium text-black dark:text-white text-center tracking-tight leading-11 mb-2'>
+          <h2 className='text-[40px] leading-[1.2] font-semibold text-black dark:text-white text-center mb-3'>
             Your Trusted Home Inspection Partner
           </h2>
-          <p className='text-xm font-normal text-black/50 dark:text-white/50 text-center'>
+          <p className='text-[17px] leading-[1.5] text-black/60 dark:text-white/60 text-center max-w-2xl mx-auto'>
             Professional inspections backed by experience, integrity, and commitment to excellence.
           </p>
         </div>
@@ -71,62 +71,14 @@ const WhyChooseUs: React.FC = () => {
                   className='text-primary'
                 />
               </div>
-              <h3 className='text-2xl font-semibold text-black dark:text-white mb-3'>
+              <h3 className='text-[24px] leading-[1.3] font-semibold text-black dark:text-white mb-3'>
                 {item.title}
               </h3>
-              <p className='text-base text-black/60 dark:text-white/60'>
+              <p className='text-[17px] leading-[1.5] text-black/60 dark:text-white/60'>
                 {item.description}
               </p>
             </div>
           ))}
-        </div>
-
-        {/* Why Hire Mizell Section */}
-        <div className='mt-24'>
-          <div className='mb-12 text-center'>
-            <h2 className='text-40 lg:text-52 font-medium text-black dark:text-white mb-4'>
-              Why Hire Mizell?
-            </h2>
-          </div>
-
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
-            {/* We Notice the Little Things */}
-            <div className='bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20 p-8 rounded-2xl border border-primary/20'>
-              <div className='flex items-start gap-4 mb-4'>
-                <div className='bg-primary/20 p-3 rounded-full'>
-                  <Icon icon='mdi:magnify-plus-outline' width={32} height={32} className='text-primary' />
-                </div>
-                <h3 className='text-2xl font-semibold text-black dark:text-white pt-2'>
-                  We Notice the Little Things
-                </h3>
-              </div>
-              <div className='space-y-4 text-black/70 dark:text-white/70'>
-                <p>
-                  Our highly-trained inspectors will comb over all accessible areas. We will crawl into the smallest spaces to check crawl spaces and the deepest corners of your attic.
-                </p>
-                <p>
-                  We use state-of-the-art tools such as infrared cameras, moisture meters, drones, and many other advanced inspection tools.
-                </p>
-              </div>
-            </div>
-
-            {/* Communication */}
-            <div className='bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20 p-8 rounded-2xl border border-primary/20'>
-              <div className='flex items-start gap-4 mb-4'>
-                <div className='bg-primary/20 p-3 rounded-full'>
-                  <Icon icon='mdi:message-text-outline' width={32} height={32} className='text-primary' />
-                </div>
-                <h3 className='text-2xl font-semibold text-black dark:text-white pt-2'>
-                  Communication
-                </h3>
-              </div>
-              <div className='space-y-4 text-black/70 dark:text-white/70'>
-                <p>
-                  We believe in being there for our clients for more than just the inspection day. Strong and honest communication is part of our business model.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
