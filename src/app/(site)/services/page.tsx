@@ -97,17 +97,21 @@ const ServicesPage = () => {
                     {/* MOLD TESTING SECTION */}
                     <div id="mold-testing" className='mb-20 scroll-mt-24'>
                         <div className='grid grid-cols-12 gap-8 items-center mb-12'>
-                            {/* Image on Left */}
+                            {/* Video on Left */}
                             <div className='lg:col-span-5 col-span-12'>
-                                <div className='relative rounded-2xl overflow-hidden'>
-                                    <Image
-                                        src="/images/properties/property6/property6.jpg"
-                                        alt="Mold Testing Services"
-                                        width={600}
-                                        height={500}
-                                        className='w-full h-96 object-cover'
-                                        unoptimized={true}
-                                    />
+                                <div className='relative rounded-2xl overflow-hidden shadow-xl'>
+                                    <div className='aspect-video'>
+                                        <iframe
+                                            width="100%"
+                                            height="100%"
+                                            src="https://www.youtube.com/embed/NTC0riR3EeI"
+                                            title="Mold Inspection Video"
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowFullScreen
+                                            className='rounded-2xl'
+                                        ></iframe>
+                                    </div>
                                 </div>
                             </div>
 
@@ -131,7 +135,7 @@ const ServicesPage = () => {
                                 {/* List of Mold Testing Types */}
                                 <div className='bg-dark/5 dark:bg-white/5 p-6 rounded-xl'>
                                     <h3 className='text-lg font-semibold text-dark dark:text-white mb-4'>During the mold testing process, we gather:</h3>
-                                    <ul className='space-y-4'>
+                                    <ul className='space-y-4 mb-6'>
                                         {moldServices.map((service, index) => (
                                             <li key={index} className='flex items-start gap-3'>
                                                 <div className='flex-shrink-0 w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center'>
@@ -144,6 +148,13 @@ const ServicesPage = () => {
                                             </li>
                                         ))}
                                     </ul>
+                                    <a
+                                        href="/mold-testing"
+                                        className='inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all duration-300'
+                                    >
+                                        Learn More About Mold Testing
+                                        <Icon icon="ph:arrow-right" width={20} height={20} />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -152,17 +163,29 @@ const ServicesPage = () => {
                     {/* REAL ESTATE PHOTOGRAPHY SECTION */}
                     <div id="real-estate-photography" className='mb-20 scroll-mt-24'>
                         <div className='grid grid-cols-12 gap-8 items-center mb-12'>
-                            {/* Image on Left */}
+                            {/* Photography Images on Left */}
                             <div className='lg:col-span-5 col-span-12'>
-                                <div className='relative rounded-2xl overflow-hidden'>
-                                    <Image
-                                        src="/images/properties/property9.jpg"
-                                        alt="Real Estate Photography"
-                                        width={600}
-                                        height={500}
-                                        className='w-full h-96 object-cover'
-                                        unoptimized={true}
-                                    />
+                                <div className='space-y-4'>
+                                    <div className='relative rounded-2xl overflow-hidden shadow-lg'>
+                                        <Image
+                                            src="/images/gallery/FB_IMG_1695315253528-1920w.webp"
+                                            alt="Real Estate Photography Example 1"
+                                            width={600}
+                                            height={400}
+                                            className='w-full h-64 object-cover'
+                                            unoptimized={true}
+                                        />
+                                    </div>
+                                    <div className='relative rounded-2xl overflow-hidden shadow-lg'>
+                                        <Image
+                                            src="/images/gallery/FB_IMG_1695315380866-1920w.webp"
+                                            alt="Real Estate Photography Example 2"
+                                            width={600}
+                                            height={400}
+                                            className='w-full h-64 object-cover'
+                                            unoptimized={true}
+                                        />
+                                    </div>
                                 </div>
                             </div>
 

@@ -96,6 +96,14 @@ export default function ContactUs() {
                   687 Harvard St.<br />Brooksville, FL 34601
                 </p>
               </div>
+              <div className='flex items-start gap-4'>
+                <Icon icon={'ph:clock'} width={32} height={32} className='flex-shrink-0' />
+                <div className='text-sm xs:text-base mobile:text-xm font-normal'>
+                  <p className='font-semibold mb-1'>Business Hours:</p>
+                  <p>Mon - Fri: 9:00 am - 6:00 pm</p>
+                  <p>Sat - Sun: Closed</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -51,16 +51,55 @@ const Footer = () => {
                   <Icon icon="ph:envelope-simple" width={20} height={20} className="text-primary" />
                   <Link href="mailto:shawn@mizellhomeinspections.com" className="hover:text-primary">shawn@mizellhomeinspections.com</Link>
                 </p>
+                <p className="flex items-start gap-2 mt-4">
+                  <Icon icon="ph:clock" width={20} height={20} className="text-primary mt-0.5" />
+                  <span>
+                    <strong className="text-white">Business Hours:</strong><br />
+                    Mon - Fri: 9:00 am - 6:00 pm<br />
+                    Sat - Sun: Closed
+                  </span>
+                </p>
               </div>
               <Link href="/contactus" className="bg-primary text-base font-semibold py-4 px-8 rounded-full text-white hover:bg-white hover:text-dark duration-300 hover:cursor-pointer">
                 Schedule Your Inspection
               </Link>
+
+              {/* Payment Methods */}
+              <div className="mt-8">
+                <h3 className="text-white text-sm font-semibold mb-3">We Accept</h3>
+                <div className="flex flex-wrap items-center gap-2">
+                  <div className="bg-white rounded px-2 py-1 flex items-center justify-center h-8">
+                    <Icon icon="logos:visa" width={40} height={20} />
+                  </div>
+                  <div className="bg-white rounded px-2 py-1 flex items-center justify-center h-8">
+                    <Icon icon="logos:mastercard" width={30} height={20} />
+                  </div>
+                  <div className="bg-white rounded px-2 py-1 flex items-center justify-center h-8">
+                    <Icon icon="logos:amex" width={30} height={20} />
+                  </div>
+                  <div className="bg-white rounded px-2 py-1 flex items-center justify-center h-8">
+                    <Icon icon="logos:discover" width={40} height={20} />
+                  </div>
+                  <div className="bg-white rounded px-2 py-1 flex items-center justify-center h-8">
+                    <Icon icon="logos:paypal" width={40} height={20} />
+                  </div>
+                  <div className="bg-white rounded px-2 py-1 flex items-center justify-center h-8">
+                    <span className="text-xs font-semibold text-dark">Check</span>
+                  </div>
+                  <div className="bg-white rounded px-2 py-1 flex items-center justify-center h-8">
+                    <Icon icon="simple-icons:cashapp" width={20} height={20} className="text-[#00D632]" />
+                  </div>
+                  <div className="bg-white rounded px-2 py-1 flex items-center justify-center h-8">
+                    <span className="text-xs font-semibold text-dark">Cash</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="md:col-span-3 sm:col-span-6 col-span-12">
               <div className="flex flex-col gap-4 w-fit">
                 {FooterLinks.slice(0, 4).map((item, index) => (
                   <div key={index}>
-                    <Link href={item.href} className="text-white/40 text-xm hover:text-white">
+                    <Link href={item.href} className="text-white/40 text-xm hover:text-white transition-colors">
                       {item.label}
                     </Link>
                   </div>
@@ -69,9 +108,9 @@ const Footer = () => {
             </div>
             <div className="md:col-span-2 sm:col-span-6 col-span-12">
               <div className="flex flex-col gap-4 w-fit">
-                {FooterLinks.slice(4, 8).map((item, index) => (
+                {FooterLinks.slice(4, 7).map((item, index) => (
                   <div key={index}>
-                    <Link href={item.href} className="text-white/40 text-xm hover:text-white">
+                    <Link href={item.href} className="text-white/40 text-xm hover:text-white transition-colors">
                       {item.label}
                     </Link>
                   </div>
@@ -80,22 +119,27 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between md:flex-nowrap flex-wrap items-center py-6 gap-6">
+        <div className="py-6 space-y-4">
           <div className="flex flex-col gap-2">
+            <p className="text-white/60 text-sm font-semibold">
+              Licensed | Bonded | Insured | Home Inspector HI12770 | Mold Inspection: MRSA 4693
+            </p>
+            <p className="text-white/40 text-sm">
+              Content, including images, displayed on this website is protected by copyright laws. Downloading, republication, retransmission or reproduction of content on this website is strictly prohibited.{' '}
+              <Link href="/terms-of-service" className="text-white/60 hover:text-primary transition-colors underline">
+                Terms of Use
+              </Link>
+              {' | '}
+              <Link href="/privacy-policy" className="text-white/60 hover:text-primary transition-colors underline">
+                Privacy Policy
+              </Link>
+            </p>
             <p className="text-white/40 text-sm ">
               ©2025 Mizell Home Inspections LLC - All Rights Reserved
             </p>
             <p className="text-white/40 text-sm">
               Website Powered By <Link href="https://www.hiveinspect.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-primary duration-300">Hive - AI Copilot for Home Inspectors</Link>
             </p>
-          </div>
-          <div className="flex gap-8 items-center">
-            <Link href="#" className="text-white/40 hover:text-primary text-sm">
-              Terms of service
-            </Link>
-            <Link href="#" className="text-white/40 hover:text-primary text-sm">
-              Privacy policy
-            </Link>
           </div>
         </div>
       </div>
