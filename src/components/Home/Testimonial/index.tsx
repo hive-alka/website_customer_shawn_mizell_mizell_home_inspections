@@ -46,7 +46,7 @@ const Testimonial = () => {
                             Testimonials
                         </p>
                     </div>
-                    <h2 className="text-[40px] leading-[1.2] font-semibold text-dark mb-4">
+                    <h2 className="text-2xl sm:text-3xl md:text-[40px] leading-[1.2] font-semibold text-dark mb-4">
                         What Our Clients Say
                     </h2>
                 </div>
@@ -62,7 +62,7 @@ const Testimonial = () => {
                     <CarouselContent className="-ml-4">
                         {testimonials.map((item, index) => (
                             <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                                <div className="bg-white rounded-2xl p-8 flex flex-col shadow-sm hover:shadow-md transition-shadow min-h-[400px]">
+                                <div className="bg-white rounded-2xl p-5 sm:p-6 md:p-8 flex flex-col shadow-sm hover:shadow-md transition-shadow min-h-[320px] sm:min-h-[360px] md:min-h-[400px]">
                                     <Icon icon="mdi:format-quote-open" width={40} height={40} className="text-primary mb-4" />
                                     <p className="text-dark/70 text-base leading-relaxed mb-6 flex-grow">
                                         {item.review}

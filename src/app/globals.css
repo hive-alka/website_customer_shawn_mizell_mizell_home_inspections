@@ -44,8 +44,10 @@
   --text-sm: 0.875rem;
 
   /* Breakpoint */
-  --breakpoint-xs: 23.438rem;
-  /* 375px */
+  --breakpoint-xs: 29.688rem;
+  /* 475px - Custom xs breakpoint for better phone-to-tablet transitions */
+  --breakpoint-sm: 40rem;
+  /* 640px - Tailwind default sm */
   --breakpoint-mobile: 32.5rem;
   /* 520px */
 
@@ -92,7 +94,7 @@ html {
 }
 
 section {
-  @apply py-24
+  @apply py-12 sm:py-16 md:py-20 lg:py-24
 }
 
 .blog-details p, .blog-details hr {

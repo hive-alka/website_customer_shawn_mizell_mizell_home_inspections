@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <section className='!py-0'>
       <div className='bg-gradient-to-b from-sky-200/60 via-sky-100/40 to-white overflow-hidden relative'>
-        <div className='container max-w-8xl mx-auto px-5 2xl:px-0 pt-36 sm:pt-40 md:pt-40 lg:pt-60 pb-8 md:pb-68'>
+        <div className='container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0 pt-36 sm:pt-40 md:pt-40 lg:pt-60 pb-8 md:pb-68'>
           <div className='relative text-dark text-center md:text-start z-10'>
             <p className='text-sm sm:text-base text-dark/70 font-medium mb-3 md:max-w-lg'>
               We INSPECT what you EXPECT
@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
             <p className='text-sm sm:text-base text-dark/60 mb-6 md:max-w-lg'>
               Certified Master Inspector® • 1,000+ Inspections • 24-Hour Reports • Small, Family-Owned Business
             </p>
-            <div className='flex flex-col xs:flex-row justify-center md:justify-start gap-4 mb-8 md:mb-0'>
+            <div className='flex flex-col sm:flex-row justify-center md:justify-start gap-4 mb-8 md:mb-0'>
               <Link href="/contactus" className='px-8 py-4 bg-primary text-white hover:bg-dark duration-300 text-base font-semibold rounded-full hover:cursor-pointer'>
                 Schedule Inspection
               </Link>

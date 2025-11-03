@@ -35,7 +35,7 @@ const Header: React.FC = () => {
   }, [handleScroll])
 
   return (
-    <header className={`fixed z-50 w-full bg-transparent transition-all duration-300 lg:px-0 px-4 ${sticky ? "h-16 py-1 top-3" : "h-24 py-1 top-0"}`}>
+    <header className={`fixed z-50 w-full bg-transparent transition-all duration-300 lg:px-0 px-4 ${sticky ? "h-14 sm:h-16 py-1 top-3" : "h-20 sm:h-24 py-1 top-0"}`}>
       <nav className={`container mx-auto max-w-8xl flex items-center justify-between duration-300 ${sticky ? "py-2 shadow-lg bg-white rounded-full top-5 px-4" : "py-4 shadow-none top-0"}`}>
         <div className='flex justify-between items-center gap-2 w-full'>
           <div className="flex items-center gap-8">
@@ -43,10 +43,11 @@ const Header: React.FC = () => {
               <Image
                 src={'/images/header/logo.png'}
                 alt='Mizell Home Inspection'
-                width={sticky ? 80 : 150}
-                height={sticky ? 40 : 75}
+                width={sticky ? 70 : 120}
+                height={sticky ? 35 : 60}
                 unoptimized={true}
-                className="object-contain transition-all duration-300"
+                className="object-contain transition-all duration-300 sm:w-auto"
+                style={{ width: sticky ? '70px' : '120px', maxWidth: sticky ? '80px' : '150px' }}
               />
             </Link>
             
@@ -64,23 +65,24 @@ const Header: React.FC = () => {
             </nav>
           </div>
           <div className='flex items-center gap-2 sm:gap-6'>
-            <Link href='tel:352-652-0259' className="hidden md:flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 text-dark hover:bg-primary/10 hover:text-primary"
+            <Link href='tel:352-652-0259' className="flex items-center gap-2 px-2 sm:px-4 py-2 rounded-lg transition-all duration-300 text-dark hover:bg-primary/10 hover:text-primary min-h-[44px]"
             >
-              <Icon icon={'ph:phone-bold'} width={24} height={24} />
-              <span className="text-lg font-medium">352-652-0259</span>
+              <Icon icon={'ph:phone-bold'} width={20} height={20} className="sm:w-6 sm:h-6" />
+              <span className="text-base sm:text-lg font-medium hidden md:inline">352-652-0259</span>
             </Link>
 
-            <div className="hidden md:block">
-              <Link href='/contactus' className="text-lg font-bold px-8 py-3 rounded-full transition-all duration-300 shadow-xl hover:scale-105 transform bg-primary text-white hover:bg-primary/90 hover:shadow-2xl"
+            <div className="hidden sm:block">
+              <Link href='/contactus' className="text-sm sm:text-base lg:text-lg font-bold px-4 sm:px-6 lg:px-8 py-2 sm:py-3 rounded-full transition-all duration-300 shadow-xl hover:scale-105 transform bg-primary text-white hover:bg-primary/90 hover:shadow-2xl"
               >
-                Schedule Inspection
+                <span className="hidden lg:inline">Schedule Inspection</span>
+                <span className="lg:hidden">Schedule</span>
               </Link>
             </div>
             
             <div className="block lg:hidden">
               <button
                 onClick={() => setNavbarOpen(!navbarOpen)}
-                className="flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border bg-dark text-white hover:bg-transparent hover:text-dark border-dark duration-300"
+                className="flex items-center gap-2 sm:gap-3 p-3 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border bg-dark text-white hover:bg-transparent hover:text-dark border-dark duration-300 min-h-[44px] min-w-[44px]"
                 aria-label='Toggle mobile menu'>
                 <span>
                   <Icon icon={'ph:list'} width={24} height={24} />

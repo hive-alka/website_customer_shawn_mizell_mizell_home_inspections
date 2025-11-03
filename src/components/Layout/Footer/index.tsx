@@ -91,19 +91,19 @@ const Footer = () => {
           <p className="text-white/60 text-xs">
             Licensed | Bonded | Insured | HI12770 | MRSA 4693
           </p>
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-white/40 text-xs">
-            <div className="flex items-center gap-2">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-2 text-white/40 text-xs">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2">
               <p>
                 Website Powered By <Link href="https://www.hiveinspect.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">Hive - AI Copilot for Home Inspectors</Link>
               </p>
-              <span>|</span>
+              <span className="hidden sm:inline">|</span>
               <p>©2025 Mizell Home Inspections LLC. All Rights Reserved.</p>
             </div>
             <div className="flex items-center gap-4">
-              <Link href="/terms-of-service" className="hover:text-primary transition-colors">
+              <Link href="/terms-of-service" className="hover:text-primary transition-colors min-h-[44px] flex items-center">
                 Terms
               </Link>
-              <Link href="/privacy-policy" className="hover:text-primary transition-colors">
+              <Link href="/privacy-policy" className="hover:text-primary transition-colors min-h-[44px] flex items-center">
                 Privacy
               </Link>
             </div>

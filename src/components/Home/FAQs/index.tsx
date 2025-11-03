@@ -9,17 +9,17 @@ import {
 const FAQ: React.FC = () => {
     return (
         <section id='faqs'>
-            <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
+            <div className='container max-w-8xl mx-auto px-4 sm:px-5 lg:px-6 2xl:px-0'>
                 <div className="max-w-5xl mx-auto">
                     <div>
                         <p className="text-dark/75 text-base font-semibold flex gap-2">
                             <Icon icon="mdi:help-circle" className="text-2xl text-primary " />
                             FAQs
                         </p>
-                        <h2 className='text-[40px] leading-[1.2] font-semibold text-dark mb-4'>
+                        <h2 className='text-2xl sm:text-3xl md:text-[40px] leading-[1.2] font-semibold text-dark mb-4'>
                             Home Inspection Questions Answered
                         </h2>
-                        <p className='text-[17px] leading-[1.5] text-dark/60 pr-20'>
+                        <p className='text-base sm:text-[17px] leading-[1.5] text-dark/60 pr-0 sm:pr-8 md:pr-20'>
                             Common questions from homebuyers and sellers answered.
                         </p>
                         <div className="my-8">

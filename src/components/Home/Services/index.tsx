@@ -16,7 +16,7 @@ const Categories = () => {
           unoptimized={true}
         />
       </div>
-      <div className="container max-w-8xl mx-auto px-5 2xl:px-0 relative z-10">
+      <div className="container max-w-8xl mx-auto px-4 sm:px-5 lg:px-6 2xl:px-0 relative z-10">
         <div className="grid grid-cols-12 items-center gap-10">
           <div className="lg:col-span-6 col-span-12">
             <p className="text-dark/75 text-base font-semibold flex gap-2.5">
@@ -47,7 +47,7 @@ const Categories = () => {
                   unoptimized={true}
                 />
               </div>
-              <div className="lg:w-[55%] w-full p-4 sm:p-6 md:p-8 flex flex-col justify-between">
+              <div className="lg:w-[55%] w-full p-3 xs:p-4 sm:p-6 md:p-8 flex flex-col justify-between">
                 <div>
                   <h3 className="text-dark text-2xl font-semibold mb-3">
                     {serviceCategories[0].name}
@@ -78,7 +78,7 @@ const Categories = () => {
                   unoptimized={true}
                 />
               </div>
-              <div className="lg:w-[55%] w-full p-4 sm:p-6 md:p-8 flex flex-col justify-between">
+              <div className="lg:w-[55%] w-full p-3 xs:p-4 sm:p-6 md:p-8 flex flex-col justify-between">
                 <div>
                   <h3 className="text-dark text-2xl font-semibold mb-3">
                     {serviceCategories[1].name}
@@ -109,7 +109,7 @@ const Categories = () => {
                   unoptimized={true}
                 />
               </div>
-              <div className="lg:w-[55%] w-full p-4 sm:p-6 md:p-8 flex flex-col justify-between">
+              <div className="lg:w-[55%] w-full p-3 xs:p-4 sm:p-6 md:p-8 flex flex-col justify-between">
                 <div>
                   <h3 className="text-dark text-2xl font-semibold mb-3">
                     {serviceCategories[2].name}

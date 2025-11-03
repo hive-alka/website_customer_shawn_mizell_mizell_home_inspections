@@ -38,7 +38,7 @@ const reasons = [
 const WhyChooseUs: React.FC = () => {
   return (
     <section>
-      <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
+      <div className='container max-w-8xl mx-auto px-4 sm:px-5 lg:px-6 2xl:px-0'>
         <div className='mb-16 flex flex-col gap-3 '>
           <div className='flex gap-2.5 items-center justify-center'>
             <span>
@@ -62,7 +62,7 @@ const WhyChooseUs: React.FC = () => {
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 lg:gap-10'>
           {reasons.map((item, index) => (
-            <div key={index} className='bg-white p-6 sm:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow'>
+            <div key={index} className='bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow'>
               <div className='mb-4'>
                 <Icon
                   icon={item.icon}

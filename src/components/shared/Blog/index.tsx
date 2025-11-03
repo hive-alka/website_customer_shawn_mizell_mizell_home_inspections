@@ -30,17 +30,17 @@ const BlogSmall: React.FC = () => {
 
     return (
         <section>
-            <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
+            <div className="container max-w-8xl mx-auto px-4 sm:px-5 lg:px-6 2xl:px-0">
                 <div className='flex justify-between md:items-end items-start mb-10 md:flex-row flex-col'>
                     <div>
                         <p className="text-dark/75 text-base font-semibold flex gap-2">
                             <Icon icon="ph:house-simple-fill" className="text-2xl text-primary" aria-label="Home icon" />
                             Blog
                         </p>
-                        <h2 className="lg:text-52 text-40 font-medium">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium">
                             Real estate insights
                         </h2>
-                        <p className='text-dark/50 text-xm'>
+                        <p className='text-dark/50 text-base sm:text-lg'>
                             Stay ahead in the property market with expert advice and updates
                         </p>
                     </div>

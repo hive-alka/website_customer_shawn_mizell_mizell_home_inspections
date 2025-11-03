@@ -52,7 +52,7 @@ const ServicesPage = () => {
                                         alt="Home Inspection Services"
                                         width={600}
                                         height={500}
-                                        className='w-full h-96 object-cover'
+                                        className='w-full h-64 sm:h-80 md:h-96 object-cover'
                                         unoptimized={true}
                                     />
                                 </div>
@@ -172,7 +172,7 @@ const ServicesPage = () => {
                                             alt="Real Estate Photography Example 1"
                                             width={600}
                                             height={400}
-                                            className='w-full h-64 object-cover'
+                                            className='w-full h-48 sm:h-56 md:h-64 object-cover'
                                             unoptimized={true}
                                         />
                                     </div>
@@ -182,7 +182,7 @@ const ServicesPage = () => {
                                             alt="Real Estate Photography Example 2"
                                             width={600}
                                             height={400}
-                                            className='w-full h-64 object-cover'
+                                            className='w-full h-48 sm:h-56 md:h-64 object-cover'
                                             unoptimized={true}
                                         />
                                     </div>
