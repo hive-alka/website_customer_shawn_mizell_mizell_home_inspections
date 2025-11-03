@@ -11,7 +11,7 @@ const reasons = [
   {
     icon: 'mdi:clock-fast',
     title: '24-Hour Report Delivery',
-    description: 'Most inspectors take 3-5 days. We deliver in 24 hours. With photos and clear next steps.'
+    description: 'Standard reports delivered within 24 hours. Expedited reports available upon request. With photos and clear next steps.'
   },
   {
     icon: 'mdi:magnify-plus-outline',
@@ -31,7 +31,7 @@ const reasons = [
   {
     icon: 'mdi:star-circle',
     title: '1,000+ Inspections',
-    description: 'Over 1,000 homes inspected. 5.0 Google rating. Central Florida trusts us. You can too.'
+    description: 'Over 1,000 homes inspected. 5.0 Google rating. West Central Florida trusts us. You can too.'
   }
 ]
 

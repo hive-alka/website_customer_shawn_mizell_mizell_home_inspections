@@ -48,7 +48,7 @@ const ServicesPage = () => {
                             <div className='lg:col-span-5 col-span-12'>
                                 <div className='relative rounded-2xl overflow-hidden'>
                                     <Image
-                                        src="/images/properties/property1/property1.jpg"
+                                        src="/images/gallery/FB_IMG_1761485320168.jpg"
                                         alt="Home Inspection Services"
                                         width={600}
                                         height={500}

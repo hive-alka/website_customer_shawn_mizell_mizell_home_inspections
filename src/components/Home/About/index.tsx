@@ -41,7 +41,7 @@ const About: React.FC = () => {
                 Inspector Shawn
               </h2>
               <p className='text-base sm:text-[17px] md:text-[18px] leading-[1.6] text-dark/70 mb-6'>
-                Certified Master Inspector® with 1,000+ inspections across Central Florida. Providing thorough, professional inspections backed by experience and integrity.
+                Certified Master Inspector® with 1,000+ inspections across West Central Florida. Providing thorough, professional inspections backed by experience and integrity.
               </p>
             </div>
 

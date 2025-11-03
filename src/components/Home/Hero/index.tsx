@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
 
               <div className='flex items-center gap-3 text-center sm:text-left'>
                 <span className='text-2xl sm:text-3xl'>📍</span>
-                <span className='text-sm sm:text-base md:text-lg'>Central FL: Gainesville to St Pete & Orlando</span>
+                <span className='text-sm sm:text-base md:text-lg'>West Central FL: Gainesville to St Pete & Orlando</span>
               </div>
             </div>
           </div>
