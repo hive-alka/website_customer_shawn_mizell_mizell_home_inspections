@@ -5,7 +5,7 @@ import { FooterLinks } from "@/app/api/footerlinks";
 const Footer = () => {
   return (
     <footer className="relative z-10 bg-dark pb-6">
-      <div className="container mx-auto max-w-7xl py-12 px-6">
+      <div className="container mx-auto max-w-7xl py-12 px-4 sm:px-5 lg:px-6 2xl:px-0">
 
         {/* Main Footer Content - Single Row */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-white/10">

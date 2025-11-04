@@ -6,8 +6,8 @@ import Link from 'next/link'
 
 const About: React.FC = () => {
   return (
-    <section className='bg-gray-50'>
-      <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
+    <section className='bg-gray-50 overflow-hidden'>
+      <div className='container max-w-8xl mx-auto px-4 sm:px-5 2xl:px-0'>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center'>
           {/* Left side - Image */}
           <div className='relative'>
@@ -17,7 +17,7 @@ const About: React.FC = () => {
                 alt='Shawn Mizell - Certified Master Inspector'
                 width={600}
                 height={600}
-                className='w-full h-full object-cover'
+                className='w-full h-[400px] sm:h-[500px] md:h-[600px] object-cover'
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>

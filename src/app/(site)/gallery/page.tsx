@@ -118,7 +118,7 @@ const GalleryPage = () => {
       {/* Lightbox Modal */}
       {selectedImage && (
         <div
-          className='fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4'
+          className='fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-2 sm:p-4 md:p-6'
           onClick={() => setSelectedImage(null)}
         >
           <button

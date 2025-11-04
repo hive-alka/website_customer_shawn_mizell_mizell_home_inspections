@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 
 export default function ContactUs() {
   return (
-    <div className='container max-w-8xl mx-auto px-5 2xl:px-0 pt-32 md:pt-44 pb-14 md:pb-28'>
+    <div className='container max-w-8xl mx-auto px-4 sm:px-5 md:px-6 2xl:px-0 pt-24 sm:pt-28 md:pt-36 lg:pt-44 pb-14 md:pb-28'>
       <div className='mb-12 text-center'>
         <h1 className='text-5xl font-semibold text-black mb-6'>
           Schedule Your Inspection

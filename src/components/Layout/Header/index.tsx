@@ -35,7 +35,7 @@ const Header: React.FC = () => {
   }, [handleScroll])
 
   return (
-    <header className={`fixed z-50 w-full bg-transparent transition-all duration-300 lg:px-0 px-4 ${sticky ? "h-14 sm:h-16 py-1 top-3" : "h-20 sm:h-24 py-1 top-0"}`}>
+    <header className={`fixed z-50 w-full bg-transparent transition-all duration-300 lg:px-0 px-4 sm:px-5 md:px-6 ${sticky ? "h-14 sm:h-16 py-1 top-3" : "h-20 sm:h-24 py-1 top-0"}`}>
       <nav className={`container mx-auto max-w-8xl flex items-center justify-between duration-300 ${sticky ? "py-2 shadow-lg bg-white rounded-full top-5 px-4" : "py-4 shadow-none top-0"}`}>
         <div className='flex justify-between items-center gap-2 w-full'>
           <div className="flex items-center gap-8">

@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
               </Link>
             </div>
           </div>
-          <div className='hidden md:block absolute -top-2 -right-68'>
+          <div className='hidden lg:block absolute -top-2 -right-68 overflow-hidden max-w-[1000px]'>
             <Image
               src={'/images/hero/heroBanner.png'}
               alt='Professional home inspection services in Florida'
@@ -34,10 +34,11 @@ const Hero: React.FC = () => {
               priority={true}
               sizes="(max-width: 768px) 100vw, 50vw"
               quality={90}
+              className='max-w-full h-auto'
             />
           </div>
         </div>
-        <div className='md:absolute bottom-0 md:-right-68 xl:right-0 bg-white py-8 sm:py-12 md:py-20 px-4 sm:px-6 md:pl-16 md:pr-8 rounded-t-2xl md:rounded-none md:rounded-tl-2xl mt-0 md:mt-24 shadow-lg'>
+        <div className='md:absolute bottom-0 md:-right-68 xl:right-0 bg-white py-8 sm:py-12 md:py-20 px-4 sm:px-6 md:pl-16 md:pr-8 rounded-t-2xl md:rounded-none md:rounded-tl-2xl mt-0 md:mt-24 shadow-lg max-w-full overflow-hidden'>
           {/* Simplified Social Proof Section */}
           <div className='flex flex-col md:flex-row items-center justify-end gap-6 sm:gap-8 md:gap-12'>
             {/* Google Reviews - Clean Design */}

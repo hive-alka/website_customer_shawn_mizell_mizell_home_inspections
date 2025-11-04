@@ -39,11 +39,11 @@ const ServicesPage = () => {
             />
 
             <section className='pt-0!'>
-                <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
+                <div className='container max-w-8xl mx-auto px-4 sm:px-5 md:px-6 2xl:px-0'>
 
                     {/* HOME INSPECTION SERVICES SECTION */}
                     <div id="home-inspections" className='mb-20 scroll-mt-24'>
-                        <div className='grid grid-cols-12 gap-8 items-center mb-12'>
+                        <div className='grid grid-cols-12 gap-4 sm:gap-6 md:gap-8 items-center mb-12'>
                             {/* Image on Left */}
                             <div className='lg:col-span-5 col-span-12'>
                                 <div className='relative rounded-2xl overflow-hidden'>
@@ -52,8 +52,8 @@ const ServicesPage = () => {
                                         alt="Home Inspection Services"
                                         width={600}
                                         height={500}
-                                        className='w-full h-64 sm:h-80 md:h-96 object-cover'
-                                        
+                                        className='w-full h-56 sm:h-72 md:h-80 lg:h-96 object-cover'
+
                                     />
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ const ServicesPage = () => {
                                     <div className='p-3 bg-primary/10 rounded-full'>
                                         <Icon icon="ph:house-fill" width={32} height={32} className='text-primary' />
                                     </div>
-                                    <h2 className='text-3xl lg:text-4xl font-semibold text-dark'>
+                                    <h2 className='text-2xl sm:text-3xl lg:text-4xl font-semibold text-dark'>
                                         Home Inspection Services
                                     </h2>
                                 </div>
@@ -172,8 +172,8 @@ const ServicesPage = () => {
                                             alt="Real Estate Photography Example 1"
                                             width={600}
                                             height={400}
-                                            className='w-full h-48 sm:h-56 md:h-64 object-cover'
-                                            
+                                            className='w-full h-44 sm:h-52 md:h-60 lg:h-64 object-cover'
+
                                         />
                                     </div>
                                     <div className='relative rounded-2xl overflow-hidden shadow-lg'>
@@ -182,8 +182,8 @@ const ServicesPage = () => {
                                             alt="Real Estate Photography Example 2"
                                             width={600}
                                             height={400}
-                                            className='w-full h-48 sm:h-56 md:h-64 object-cover'
-                                            
+                                            className='w-full h-44 sm:h-52 md:h-60 lg:h-64 object-cover'
+
                                         />
                                     </div>
                                 </div>

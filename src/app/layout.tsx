@@ -98,7 +98,7 @@ export default function RootLayout({
       <head>
         <LocalBusinessSchema />
       </head>
-      <body className={`${font.className} bg-white antialiased`}>
+      <body className={`${font.className} bg-white antialiased overflow-x-hidden`}>
         <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX'} />
         <BreadcrumbSchema />
         <NextTopLoader color="#C41E3A" />

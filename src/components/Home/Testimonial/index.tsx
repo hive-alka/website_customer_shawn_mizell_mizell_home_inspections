@@ -38,7 +38,7 @@ const Testimonial = () => {
 
     return (
         <section className="bg-gray-50 relative overflow-hidden py-20" id="testimonial">
-            <div className="container max-w-7xl mx-auto px-5 2xl:px-0">
+            <div className="container max-w-7xl mx-auto px-4 sm:px-5 md:px-6 2xl:px-0">
                 <div className="text-center mb-12">
                     <div className="flex gap-2 items-center justify-center mb-3">
                         <Icon icon="mdi:star-circle" className="text-2xl text-primary" />

@@ -7,13 +7,13 @@ import { serviceCategories } from "@/app/api/serviceCategories";
 const Categories = () => {
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute left-0 top-0">
+      <div className="absolute left-0 top-0 max-w-full overflow-hidden">
         <Image
           src="/images/categories/Vector.svg"
           alt="vector"
           width={800}
           height={1050}
-          
+          className="max-w-[600px] md:max-w-[800px] h-auto"
         />
       </div>
       <div className="container max-w-8xl mx-auto px-4 sm:px-5 lg:px-6 2xl:px-0 relative z-10">
@@ -47,12 +47,12 @@ const Categories = () => {
                   
                 />
               </div>
-              <div className="lg:w-[55%] w-full p-3 xs:p-4 sm:p-6 md:p-8 flex flex-col justify-between">
+              <div className="lg:w-[55%] w-full p-4 xs:p-5 sm:p-6 md:p-8 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-dark text-2xl font-semibold mb-3">
+                  <h3 className="text-dark text-xl sm:text-2xl font-semibold mb-3">
                     {serviceCategories[0].name}
                   </h3>
-                  <p className="text-dark/70 text-base leading-[1.6]">
+                  <p className="text-dark/70 text-sm sm:text-base leading-[1.6]">
                     {serviceCategories[0].description}
                   </p>
                 </div>
@@ -78,12 +78,12 @@ const Categories = () => {
                   
                 />
               </div>
-              <div className="lg:w-[55%] w-full p-3 xs:p-4 sm:p-6 md:p-8 flex flex-col justify-between">
+              <div className="lg:w-[55%] w-full p-4 xs:p-5 sm:p-6 md:p-8 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-dark text-2xl font-semibold mb-3">
+                  <h3 className="text-dark text-xl sm:text-2xl font-semibold mb-3">
                     {serviceCategories[1].name}
                   </h3>
-                  <p className="text-dark/70 text-base leading-[1.6]">
+                  <p className="text-dark/70 text-sm sm:text-base leading-[1.6]">
                     {serviceCategories[1].description}
                   </p>
                 </div>
@@ -109,12 +109,12 @@ const Categories = () => {
                   
                 />
               </div>
-              <div className="lg:w-[55%] w-full p-3 xs:p-4 sm:p-6 md:p-8 flex flex-col justify-between">
+              <div className="lg:w-[55%] w-full p-4 xs:p-5 sm:p-6 md:p-8 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-dark text-2xl font-semibold mb-3">
+                  <h3 className="text-dark text-xl sm:text-2xl font-semibold mb-3">
                     {serviceCategories[2].name}
                   </h3>
-                  <p className="text-dark/70 text-base leading-[1.6]">
+                  <p className="text-dark/70 text-sm sm:text-base leading-[1.6]">
                     {serviceCategories[2].description}
                   </p>
                 </div>

@@ -16,9 +16,9 @@ const AboutPage = () => {
       />
 
       {/* Main Content Section */}
-      <section className='py-20'>
-        <div className='container max-w-7xl mx-auto px-5 2xl:px-0'>
-          <div className='grid grid-cols-12 gap-12 items-center'>
+      <section className='py-20 overflow-hidden'>
+        <div className='container max-w-7xl mx-auto px-4 sm:px-5 md:px-6 2xl:px-0'>
+          <div className='grid grid-cols-12 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center'>
             {/* Image Column */}
             <div className='lg:col-span-5 col-span-12'>
               <div className='relative rounded-2xl overflow-hidden shadow-2xl'>
@@ -27,8 +27,8 @@ const AboutPage = () => {
                   alt='Inspector Shawn Mizell'
                   width={600}
                   height={700}
-                  className='w-full h-auto'
-                  
+                  className='w-full h-auto max-h-[500px] sm:max-h-[600px] lg:max-h-none object-cover'
+
                 />
                 {/* Social Media Badge */}
                 <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6'>
@@ -51,8 +51,8 @@ const AboutPage = () => {
             </div>
 
             {/* Content Column */}
-            <div className='lg:col-span-7 col-span-12'>
-              <div className='space-y-6 text-lg text-black/80 leading-relaxed'>
+            <div className='lg:col-span-7 col-span-12 px-2 sm:px-0'>
+              <div className='space-y-4 sm:space-y-6 text-base sm:text-lg text-black/80 leading-relaxed'>
                 <p>
                   <strong className='text-primary'>Inspector Shawn</strong> (Shawn Mizell) is a Certified Master Inspector® and licensed Commercial Property Inspector with years of experience helping Florida homeowners and investors make informed decisions. As the owner of Mizell Home Inspections, Inspector Shawn is known for his meticulous attention to detail, deep building science knowledge, and commitment to integrity on every inspection.
                 </p>

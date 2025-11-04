@@ -142,9 +142,9 @@ export default async function Post({ params }: Params) {
                 </div>
             </section>
             <section className="pt-12!">
-                <div className="container max-w-8xl mx-auto px-4">
-                    <div className="-mx-4 flex flex-wrap justify-center">
-                        <div className="blog-details markdown xl:pr-10">
+                <div className="container max-w-8xl mx-auto px-4 sm:px-5 md:px-6">
+                    <div className="flex flex-wrap justify-center">
+                        <div className="blog-details markdown xl:pr-10 w-full px-4 sm:px-0">
                             <div dangerouslySetInnerHTML={{ __html: content }}></div>
                         </div>
                     </div>

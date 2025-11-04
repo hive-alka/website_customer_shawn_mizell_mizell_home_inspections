@@ -35,7 +35,7 @@ const MoldTestingPage = () => {
       />
 
       <section className='py-20'>
-        <div className='container max-w-7xl mx-auto px-5 2xl:px-0'>
+        <div className='container max-w-7xl mx-auto px-4 sm:px-5 md:px-6 2xl:px-0'>
           {/* Main Content Section */}
           <div className='max-w-4xl mx-auto'>
             {/* Content Column */}
