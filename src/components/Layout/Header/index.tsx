@@ -45,7 +45,7 @@ const Header: React.FC = () => {
                 alt='Mizell Home Inspection'
                 width={sticky ? 70 : 120}
                 height={sticky ? 35 : 60}
-                unoptimized={true}
+                
                 className="object-contain transition-all duration-300 sm:w-auto"
                 style={{ width: sticky ? '70px' : '120px', maxWidth: sticky ? '80px' : '150px' }}
               />

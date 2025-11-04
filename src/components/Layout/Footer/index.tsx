@@ -17,8 +17,8 @@ const Footer = () => {
               <Link href="tel:352-652-0259" className="block hover:text-primary transition-colors">
                 352-652-0259
               </Link>
-              <Link href="mailto:shawn@mizellhomeinspections.com" className="block hover:text-primary transition-colors">
-                shawn@mizellhomeinspections.com
+              <Link href="/contactus" className="block hover:text-primary transition-colors">
+                Contact Us via Email
               </Link>
               <p>Mon - Fri: 9am - 6pm</p>
               <p className="pt-2">687 Harvard St.<br/>Brooksville, FL 34601</p>

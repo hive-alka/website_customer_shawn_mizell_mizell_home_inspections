@@ -11,11 +11,11 @@ const BlogCard: FC<{ blog: Blog }> = ({ blog }) => {
             <div className="overflow-hidden rounded-2xl flex-shrink-0 aspect-[4/3]">
                 <Image
                     src={coverImage!}
-                    alt="image"
+                    alt={title || "Blog post image"}
                     className="transition group-hover:scale-110 w-full h-full object-cover"
                     width={400}
                     height={300}
-                    unoptimized={true}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
             </div>
             <div>

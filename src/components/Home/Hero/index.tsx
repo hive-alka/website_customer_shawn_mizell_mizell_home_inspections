@@ -28,11 +28,12 @@ const Hero: React.FC = () => {
           <div className='hidden md:block absolute -top-2 -right-68'>
             <Image
               src={'/images/hero/heroBanner.png'}
-              alt='heroImg'
+              alt='Professional home inspection services in Florida'
               width={1082}
               height={1016}
-              priority={false}
-              unoptimized={true}
+              priority={true}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              quality={90}
             />
           </div>
         </div>
@@ -57,11 +58,10 @@ const Hero: React.FC = () => {
               <div className='flex items-center gap-3'>
                 <Image
                   src='/images/internachi-certified.webp'
-                  alt='InterNACHI Certified'
+                  alt='InterNACHI Certified Master Inspector'
                   width={40}
                   height={40}
                   className='object-contain sm:w-12 sm:h-12'
-                  unoptimized={true}
                 />
                 <span className='text-sm sm:text-base md:text-lg'>InterNACHI Certified</span>
               </div>

@@ -3,7 +3,12 @@ import { Metadata } from "next";
 import { Icon } from "@iconify/react/dist/iconify.js"
 
 export const metadata: Metadata = {
-  title: "404 Page | Property ",
+  title: "Page Not Found | Mizell Home Inspections",
+  description: "The page you're looking for doesn't exist. Return to our home page or contact us for assistance.",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 const ErrorPage = () => {
@@ -15,7 +20,7 @@ const ErrorPage = () => {
           alt="404"
           width={490}
           height={450}
-          unoptimized={true}
+          
         />
       </section>
       <section className="text-center bg-cover relative overflow-x-hidden" >

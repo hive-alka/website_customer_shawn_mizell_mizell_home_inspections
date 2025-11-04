@@ -13,7 +13,7 @@ const Categories = () => {
           alt="vector"
           width={800}
           height={1050}
-          unoptimized={true}
+          
         />
       </div>
       <div className="container max-w-8xl mx-auto px-4 sm:px-5 lg:px-6 2xl:px-0 relative z-10">
@@ -44,7 +44,7 @@ const Categories = () => {
                   width={680}
                   height={386}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  unoptimized={true}
+                  
                 />
               </div>
               <div className="lg:w-[55%] w-full p-3 xs:p-4 sm:p-6 md:p-8 flex flex-col justify-between">
@@ -75,7 +75,7 @@ const Categories = () => {
                   width={680}
                   height={386}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  unoptimized={true}
+                  
                 />
               </div>
               <div className="lg:w-[55%] w-full p-3 xs:p-4 sm:p-6 md:p-8 flex flex-col justify-between">
@@ -106,7 +106,7 @@ const Categories = () => {
                   width={680}
                   height={386}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  unoptimized={true}
+                  
                 />
               </div>
               <div className="lg:w-[55%] w-full p-3 xs:p-4 sm:p-6 md:p-8 flex flex-col justify-between">

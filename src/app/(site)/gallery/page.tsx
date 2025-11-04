@@ -6,6 +6,8 @@ import { Icon } from '@iconify/react'
 import HeroSub from '@/components/shared/HeroSub'
 import CTA from '@/components/shared/CTA'
 
+// Note: Metadata export removed - use layout metadata or convert to server component if needed
+
 interface GalleryImage {
   id: number
   src: string
@@ -100,7 +102,7 @@ const GalleryPage = () => {
                   alt={image.alt}
                   fill
                   className='object-cover group-hover:scale-110 transition-transform duration-500'
-                  unoptimized={true}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
                   <div className='w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center'>
@@ -157,7 +159,7 @@ const GalleryPage = () => {
                 width={1200}
                 height={800}
                 className='max-w-full max-h-[85vh] w-auto h-auto object-contain rounded-lg'
-                unoptimized={true}
+                quality={90}
               />
             </div>
             <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg'>

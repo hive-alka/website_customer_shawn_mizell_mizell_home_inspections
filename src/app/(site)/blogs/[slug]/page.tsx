@@ -108,7 +108,7 @@ export default async function Post({ params }: Params) {
                                     width={48}
                                     height={48}
                                     quality={100}
-                                    unoptimized={true}
+                                    
                                 />
                                 <div>
                                     <span className="text-xm text-dark">

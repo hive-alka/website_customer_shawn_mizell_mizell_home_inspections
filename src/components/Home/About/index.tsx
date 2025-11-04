@@ -18,7 +18,7 @@ const About: React.FC = () => {
                 width={600}
                 height={600}
                 className='w-full h-full object-cover'
-                unoptimized={true}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>

@@ -53,7 +53,7 @@ const ServicesPage = () => {
                                         width={600}
                                         height={500}
                                         className='w-full h-64 sm:h-80 md:h-96 object-cover'
-                                        unoptimized={true}
+                                        
                                     />
                                 </div>
                             </div>
@@ -173,7 +173,7 @@ const ServicesPage = () => {
                                             width={600}
                                             height={400}
                                             className='w-full h-48 sm:h-56 md:h-64 object-cover'
-                                            unoptimized={true}
+                                            
                                         />
                                     </div>
                                     <div className='relative rounded-2xl overflow-hidden shadow-lg'>
@@ -183,7 +183,7 @@ const ServicesPage = () => {
                                             width={600}
                                             height={400}
                                             className='w-full h-48 sm:h-56 md:h-64 object-cover'
-                                            unoptimized={true}
+                                            
                                         />
                                     </div>
                                 </div>

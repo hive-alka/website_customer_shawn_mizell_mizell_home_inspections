@@ -28,7 +28,7 @@ const AboutPage = () => {
                   width={600}
                   height={700}
                   className='w-full h-auto'
-                  unoptimized={true}
+                  
                 />
                 {/* Social Media Badge */}
                 <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6'>

@@ -20,7 +20,7 @@ const ServiceCard: React.FC<{ item: Service }> = ({ item }) => {
                 width={440}
                 height={300}
                 className='w-full rounded-t-2xl group-hover:brightness-50 group-hover:scale-125 transition duration-300 delay-75'
-                unoptimized={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             )}
           </Link>

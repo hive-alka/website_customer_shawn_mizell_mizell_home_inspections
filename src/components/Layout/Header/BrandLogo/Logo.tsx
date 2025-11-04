@@ -5,10 +5,9 @@ const Logo: React.FC = () => {
     <>
       <Image
         src={'/images/header/dark-logo.svg'}
-        alt='logo'
+        alt='Mizell Home Inspections Logo'
         width={150}
         height={68}
-        unoptimized={true}
       />
     </>
   )
