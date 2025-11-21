@@ -28,9 +28,10 @@ export default function ContactUs() {
       <div className='mb-16'>
         <div className='border border-black/10 rounded-2xl overflow-hidden shadow-xl'>
           <iframe
-            src='https://app.spectora.com/home-inspectors/my-inspection-company-eef1ca1ab8/schedule?iframe=1'
+            src='https://dashboard.hiveinspect.com/embed/schedule/9afff918-774a-4d31-a7c9-49ba20a235ac?iframe=1'
             style={{border: 0, height: '1100px', width: '100%'}}
             title='Schedule Home Inspection'
+            allow='geolocation'
           />
         </div>
       </div>
